@@ -1,6 +1,7 @@
 
-import React from "react"
-import Header from "./header"
+import React from "react";
+import Header from "./header";
+import Footer from "./footer"
 import "./homeLayout.css"
 
 
@@ -12,6 +13,7 @@ const HomeLayout = ({children}) =>{
             <div style={{height:"1500px"}}>
                 {children}
             </div>
+            <Footer></Footer>
 
             
         </div>
