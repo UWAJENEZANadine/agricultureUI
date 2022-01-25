@@ -1,12 +1,19 @@
 import React from "react";
+import HomeLayout from "../components/homeLayout";
 
-const Home = () =>{
+const Home=()=>{
+
     return(
-        <div className="container">
-        <h1>hello</h1>
-    </div>
+        <HomeLayout>
 
+            
+
+        </HomeLayout>
+       
+              
+
+      
+     
     )
-  
 }
 export default Home

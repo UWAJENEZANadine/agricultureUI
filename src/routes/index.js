@@ -1,13 +1,14 @@
 
-import { Routes, Route } from "react-router-dom";
-import Home from "../views/home"
-import React from "react";
-
-const Index = () =>{
+import React from "react"
+import {Routes, Route, useLocation} from "react-router-dom";
+import Home from "../views/home";
+const Index=()=>{
+    const currentUrl=useLocation.pathname
     return(
         <Routes>
-            <Route element ={<Home/>} path ="/home"></Route>
+            <Route path="/home" element={<Home/>}/>
         </Routes>
     )
 }
-export default Index
+export default Index;
+
