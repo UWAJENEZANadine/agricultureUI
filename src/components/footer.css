@@ -1,0 +1,15 @@
+.footer{
+    background-color: rgba(3, 3, 2, 0.979);
+    height: 40vh;
+    display: flex;
+     
+    
+}
+h1{
+    color: wheat;
+    margin-left: 250px;
+}
+p{
+    color: wheat;
+    margin-left: 250px;
+}
