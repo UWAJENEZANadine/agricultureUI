@@ -1,7 +1,11 @@
 import react from "react";
+import "./home.css";
+
 const Home=()=>{
     return(
-        <h1>IGIRE MUHINZI</h1>
+        <div className="background-image">
+           
+        </div>
     )
 }
 export default Home
