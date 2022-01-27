@@ -1,8 +1,9 @@
-import react from "react"
-import {Routes, Route, useLocation} from "react-router-dom";
+
+import React from "react"
+import {Routes, Route} from "react-router-dom";
 import Home from "../views/home";
 const Index=()=>{
-    const currentUrl=useLocation.pathname
+//    onst currentUrl=useLocation.pathname c
     return(
         <Routes>
             <Route path="/home" element={<Home/>}/>
@@ -10,3 +11,4 @@ const Index=()=>{
     )
 }
 export default Index;
+
