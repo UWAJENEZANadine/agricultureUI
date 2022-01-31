@@ -1,14 +1,16 @@
 
 import React from "react"
-import {Routes, Route, useLocation} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Home from "../views/home";
 import AboutUs from "../views/aboutUs";
+import SignUp from "../views/SignUp"
 const Index=()=>{
-    const currentUrl=useLocation.pathname
+    
     return(
         <Routes>
             <Route path="/home" element={<Home/>}/>
-            <Route path="/about" element={<AboutUs/>}/>
+            <Route path="/AboutUs" element={<AboutUs/>}/>
+            <Route path="/SignUp" element={<SignUp/>}/>
 
         </Routes>
     )
