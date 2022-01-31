@@ -59,10 +59,13 @@
     font-size: 25px;
     font-weight: 900;
     font-family: monospace; 
+
   
    
 }
 .nav-container a:hover{
-color: green;
+color: rgb(0, 128, 0);
 transition: 1s;
+text-decoration: 4px solid underline;
+
 }
