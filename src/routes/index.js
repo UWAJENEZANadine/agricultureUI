@@ -5,7 +5,6 @@ import Home from "../views/home";
 import AboutUs from "../views/aboutUs";
 import SignUp from "../views/SignUp"
 const Index=()=>{
-    
     return(
         <Routes>
             <Route path="/home" element={<Home/>}/>
