@@ -1,6 +1,186 @@
- .product-container{
+
+ /* .product-container{
     background-color: black;
     height: 50%;
     width: 50%;
-} 
+}  */
+
+
+.animation{
+    height:130vh;
+    background-image: url(https://www.eac.int/images/Press_Releases/coffee.jpg);
+    width: 100%;
+     align-items: center;
+      display: flex;
+    
+        /* margin-top: 50px; */
+        /* margin-left: 120px; */
+        animation:animation 30s infinite  ;
+      }
+        @keyframes animation {
+        /* 40%{
+                background:url(https://thumbs.dreamstime.com/b/african-farmer-man-standing-organic-farm-wearing-native-clothes-agriculture-cultivation-concept-192460086.jpg)
+              } */
+          25%{
+            background:url(https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/fruit.jpg?quality=82&strip=all)
+          } 
+           40%{
+            background:url(https://p.scooper.news/v2-EagleNews/Eagle-NewsImage/detail/20201207/1ab2a084d743d4bb7939666392123634.webp) 
+          } 
+            65%{
+            background:url(https://bakerpedia.com/wp-content/uploads/2021/09/Whole-Grain-Wheat-Flour-e1632990518585-400x400.jpg)
+           }       
+            80%{
+            background:url(https://static.toiimg.com/photo/86814605.cms)
+          }
+           95%{
+            background:url(https://freerangestock.com/sample/39839/vegetables-market.jpg)
+          }
+          80%{
+            background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmu1Xay-8tSniMRxmm83zkR2j0q9hs_HU3lbgDmXEssW-j6SfvKGx6Q8CxontrGAxNnQ&usqp=CAU)}
+}
+.description{
+    height: 120vh;
+    width: 100%;
+    background-color: rgb(226, 247, 248);
+    text-align: center;
+    color: rgb(1, 1, 17);
+    /* margin-left: 40%; */
+
+}
+.description h1{
+  margin-right: 22%;
+}
+.description p{
+  margin-right: 22%;
+}
+
+.rows-container{
+    height: 105vh;
+    width: 100%;
+    display: flex;
+}
+.row1{
+    height: 90vh;
+    width:30%;
+    background-color:wheat;
+    margin: 10vh 10px 0px 20px;
+    border-radius: 50px;
+    
+}
+.row2{
+    height: 90vh;
+    width:35%;
+    background-color:wheat;
+    margin: 10vh 10px 0px 20px;
+    border-radius: 50px;
+
+}
+.row3{
+    height: 90vh;
+    width:30%;
+    background-color:wheat;
+    margin: 10vh 10px 0px 20px;
+    border-radius: 50px;
+
+
+}
+.image1{
+    width: 100%;
+    background-image:url(https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a);
+    height: 50vh;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+.image2{
+    width: 100%;
+    background-image:url("../assets/images/bridge.jpg");
+    
+    height: 50vh;
+    border-radius: 50px 50px 50px 50px;
+}
+.image3{
+    width: 100%;
+    background-image:url(https://s3.envato.com/files/312326603/181_1R3A9259.jpg);
+    height: 50vh;
+    background-size:cover;
+    border-radius: 50px 50px 50px 50px;
+}
+.row1-description p{
+  width:90%;
+  height: 40vh;
+  color: black;
+margin-left: 20px;
+margin-top: 15px;
+}
+.row1-description button{
+  color: black;
+  background-color: rgb(252, 201, 125);
+  margin-top: 25px;
+  height: 25px; 
+  border-radius: 10px;
+  width:100px;
+  border:solid rgb(3, 3, 41);
+  
+}
+.row1-description a{
+  text-decoration: none;
+
+}
+.row1-description a:hover {
+  color:black;
+  }
+
+  .row2-description p{
+  width:90%;
+  height: 40vh;
+  color: black;
+margin-left: 20px;
+margin-top: 15px;
+}
+.row2-description button{
+  color: black;
+  background-color: rgb(252, 201, 125);
+  margin-top: 25px;
+  height: 25px; 
+  border-radius: 10px;
+  width:100px;
+  border:solid rgb(3, 3, 41);;
+  
+}
+.row2-description a{
+  text-decoration: none;
+
+}
+.row2-description a:hover {
+  color:black;
+  
+
+}
+.row3-description p{
+  width:90%;
+  height: 40vh;
+  color: black;
+margin-left: 20px;
+margin-top: 15px;
+}
+.row3-description button{
+  color: black;
+  background-color: rgb(252, 201, 125);
+  margin-top: 10px;
+  height: 25px; 
+  border-radius: 10px;
+  width:100px;
+  border:solid rgb(3, 3, 41);
+  
+}
+.row3-description a{
+  text-decoration: none;
+
+}
+.row3-description a:hover {
+  color:black;
+  
+
+}
 

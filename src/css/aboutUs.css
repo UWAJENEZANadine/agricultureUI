@@ -1,0 +1,53 @@
+.aboutUs-container{
+     background-image: url("https://media0.giphy.com/media/SXg5fv7ReOZS41jfUF/giphy.gif");
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 70vh;
+    
+}
+.about-header h1{
+    text-align: center;
+    color: rgba(243, 142, 10, 0.726);
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.about1-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.about1-container p{
+    width: 80%;
+    font-size: 25px;
+    
+
+}
+.antdd-style{
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.bout-col1{
+    margin-left: 70px;
+}
+.location-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 0px 100px;
+    margin-top: 55px;
+
+}
+.horizontal-line{
+    border: 4px solid rgb(197, 116, 9);
+    height:"10px";
+    margin-top: 5px;
+    width: 60%;
+    margin-left: 250px;
+}
+iframe{
+    margin-bottom: 20px;
+}
+
+

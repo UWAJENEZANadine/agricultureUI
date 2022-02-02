@@ -12,7 +12,14 @@ import  allProductData from '../assets/constants/product.json';
 const ProductView=()=>{
     return(
         <HomeLayout>
- {/* <h1>products</h1> */}
+            <div className="product-container">
+{
+     allProductData.map((data)=>(<ProductCard data={data}/>))
+}
+                      
+                
+
+            </div>
 
             </HomeLayout>
 
