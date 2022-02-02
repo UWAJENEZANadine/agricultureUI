@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import HomeLayout from "../components/homeLayout";
 import { Form, Input, Button, Checkbox, Modal, Select } from "antd";
 import { UserOutlined, LockOutlined,PhoneOutlined,InboxOutlined} from "@ant-design/icons";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 import "../css/SignUp.css";
 
 const SignUp = () => {
@@ -15,14 +15,18 @@ const SignUp = () => {
   const { Option } = Select;
 
   return (
+    <>
+    
     <HomeLayout>
-      <Modal
+      {/* <Modal
         className="register-model-form"
         visible={visible}
         width="50%"
         onOk={() => setVisible(true)}
         onCancel={() => setVisible(false)}
-      >
+      > */}
+      <div className="form-background">
+        <br /><br /><br /><br /><br /><br />
         <h1>CREATE ACCOUNT</h1>
         <Form
           name="normal_register"
@@ -63,10 +67,11 @@ const SignUp = () => {
             />
           </Form.Item>
           <Form.Item
-            label=" phone: "
+            label="phone: "
             name=" phone"
             rules={[
               {
+                type:"phone",
                 required: true,
                 message: "Please input valid phone",
               },
@@ -74,7 +79,7 @@ const SignUp = () => {
           >
             <Input
               prefix={<PhoneOutlined  className="site-form-item-icon" />}
-              placeholder=" phone "
+              placeholder=" phone "  style={{marginLeft:"20px", width:"394px"}}
             />
           </Form.Item>
           <Form.Item
@@ -82,15 +87,15 @@ const SignUp = () => {
             name="email"
             rules={[
               {
-                type: "email",
+                type:"email",
                 required: true,
                 message: "Please input valid phone",
               },
             ]}
           >
-            <Input
+            <Input 
               prefix={<InboxOutlined className="site-form-item-icon" />}
-              placeholder="email "
+              placeholder="email" style={{marginLeft:"25px", width:"394px"}}
             />
           </Form.Item>
 
@@ -116,7 +121,7 @@ const SignUp = () => {
             name="gender"
             rules={[{ required: true, message: "Please select gender!" }]}
           >
-            <Select placeholder="select your gender">
+            <Select placeholder="select your gender" style={{marginLeft:"15px", width:"393px"}}>
               <Option value="male">male</Option>
               <Option value="female">female</Option>
               <Option value="other">other</Option>
@@ -128,7 +133,7 @@ const SignUp = () => {
             name="role"
             rules={[{ required: true, message: "Please select your role" }]}
           >
-            <Select placeholder="select your role">
+            <Select placeholder="select your role" style={{marginLeft:"33px", width:"395px"}}>
               <Option value="admin">admin</Option>
               <Option value="buyer">buyer</Option>
               <Option value="seller">seller</Option>
@@ -139,10 +144,6 @@ const SignUp = () => {
             <Form.Item name="remember" valuePropName="checked" noStyle>
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
-
-            <a className="login-form-forgot" href="">
-              Forgot password
-            </a>
           </Form.Item>
 
           <Form.Item>
@@ -152,38 +153,16 @@ const SignUp = () => {
               className="login-form-button"
             >
               create account
+
             </Button>
           </Form.Item>
         </Form>
-      </Modal>
+        </div>
+      {/* </Modal> */}
     </HomeLayout>
+    </>
   );
 };
 
 export default SignUp;
 
-// firstName: String,
-//     lastName: String,
-//     phone: String,
-//     email: {
-//       type: String,
-//       required: true,
-//       unique: true,
-//     },
-//     password: {
-//       type: String,
-//       required: true,
-//     },
-//     address: {
-//       type: String,
-//       default: "Rwanda",
-//     },
-//     gender: {
-//       type: String,
-//       enum: ["male", "female", "other", "not-say"],
-//     },
-
-//     role: {
-//       type: String,
-//       default: "buyer",
-//       enum: ["admin", "buyer", "seller"],

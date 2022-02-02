@@ -1,0 +1,32 @@
+
+ .trigger { 
+    padding:  0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .trigger:hover {
+    color: #1890ff;
+  }
+  
+  .logo {
+    margin: 10px 10px 10px 10px;
+    border-radius: 80px;
+
+  }
+  
+  .site-layout .site-layout-background {
+    background: rgba(206, 219, 206, 0.918);
+  }
+
+  .dash-form{
+    width: 50%;
+   
+  }
+  Table{
+    background-color: rgba(255, 99, 71, 0.103);
+  }
+ 
+ 
