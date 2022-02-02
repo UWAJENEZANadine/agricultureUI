@@ -12,59 +12,73 @@
 }
 .home1-container{
     width: 100%;
-    height: 189px; 
-    background-color: rgba(172, 102, 10, 0.822);
+    height: 150px; 
+    padding-top: -40px;
+    background-color: #5ce8f0;
     background-attachment: fixed;
-    margin-top: -5px;
+    /* margin-top: -5px; */
  
 
+}
+.home1-container h1{
+    font-family: sans-serif;
+    margin-top: -120px;
+    padding-top: 40px;
+    color: rgb(131, 76, 5);
 }
 .logo-container{
     display: flex;
     width:100%;
      height: 29vh; 
-    background-image: url("https://media.istockphoto.com/photos/wheat-picture-id175443800?k=20&m=175443800&s=612x612&w=0&h=JuSzMASaPI_jZe0pHD4pnKh6LYfahIxbLsZQ70wt-rs=");
+    /* background-image: url("https://media.istockphoto.com/photos/wheat-picture-id175443800?k=20&m=175443800&s=612x612&w=0&h=JuSzMASaPI_jZe0pHD4pnKh6LYfahIxbLsZQ70wt-rs="); */
     background-attachment: fixed;
     
    
 
 }
 .logo-container img{
-    width: 150px;
-    height: 150px;
-
+    width: 200px;
+    height: 200px;
+    margin-left: 26%;
+    /* margin-bottom: -40px; */
+    margin-top: -48px;
+    /* background-color: black; */
     
 }
 
 .nav-nav{
-    width: 80%;
-    margin-left: 20em;
-    background-color: black;
-    margin-left: 150px;
-    border-radius: 50px;
-    height: 90px;
-    padding: 8px;
-    padding-top: 25px;
+    width: 100%;
+    background-color:rgb(226, 247, 248);
+    /* border-radius: 50px; */
+    height: 50px;
+    padding: 10px;
+    margin-top:0px ;
+    color: black;
+    text-align: center;
+    /* padding-top: 25px; */
     
   
 }
 
 
 .nav-container a{
-    margin-left: 43px;
+    margin-left: 70px;
     text-align: center;
-    padding: 35px;
-    color: rgb(253, 251, 251);
+    padding: 0px;
+    color: black;
+    margin-left: 50px;
+    /* color: rgb(253, 251, 251); */
     text-decoration: none;
-    font-size: 25px;
-    font-weight: 900;
-    font-family: monospace; 
+    font-size: 18px;
+    font-weight:bold;
+    font-family:sans-serif;
+    /* background-repeat: no-repeat;  */
 
   
    
 }
 .nav-container a:hover{
-color: rgb(0, 128, 0);
+color: rgb(81, 143, 224);
 transition: 1s;
 text-decoration: 4px solid underline;
 

@@ -1,0 +1,65 @@
+[
+    {
+        "productname": "coffee",
+        "description": "Maraba's coffee plants are the Bourbon variety of the Coffea arabica species and are grown on fertile volcanic soils on high-altitude hills",
+        "available quantity": "300kg",
+        "images": ["https://www.firstcoastteaco.com/wp-content/uploads/shutterstock-326070713.jpg"],
+        "posteddate": "2022/02/03",
+        "expirationdate": "2022/08/12",
+        "phone": "+250786929350",
+        "price":"$8/kg"
+      },
+      {
+        "productname": "Passion fruits",
+        "description": "Our passion fruitshave sweet, tart, juicy yellow interiors that are interlaced with black seeds, with hard outer casings.",
+        "available quantity": "200kg",
+        "images": ["https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1147733251.jpg?crop=1xw:0.75xh;center,top&resize=1200:*"],
+        "posteddate": "2022/02/03",
+        "expirationdate": "2022/08/12",
+        "phone": "+250786929672",
+        "price":"$2/kg"
+      },
+      {
+        "productname": "Irish potatoes",
+        "description": "The flesh of an Irish potato is a creamy white, and it is covered with a white to cream-colored skin which may be mottled with black flecks or marks.",
+        "available quantity": "200kg",
+        "images": ["https://cdn.filestackcontent.com/resize=width:430,height:430,fit:crop,align:center/GrtUMUyJTLuKGeGjU10W"],
+        "posteddate": "2022/02/16",
+        "expirationdate": "2022/02/22",
+        "phone": "+250786929672",
+        "price":"$1/kg"
+      },
+      {
+        "productname": "carrots",
+        "description": "Easy to grow and full of vitamins, this rich, sweet flavored carrot has 4 roots that are bright orange to the center",
+        "available quantity": "200kg",
+        "images": ["https://safiorganics.co.ke/wp-content/uploads/2021/09/30680-Nantes-Coreless-Scarlet-Carrot.webp"],
+        "posteddate": "2022/02/22",
+        "expirationdate": "2022/02/28",
+        "phone": "+250786929472",
+        "price":"$1/kg"
+      },
+      {
+        "productname": "Vegetable beans",
+        "description": "Green Beans can be eaten raw or cooked to different degrees of tenderness and added to a variety of food dishes such as salads, soups, stews, and casseroles.",
+        "available quantity": "200kg",
+        "images": ["https://m.media-amazon.com/images/I/51CEU1VOacL._SX466_.jpg"],
+        "posteddate": "2022/02/03",
+        "expirationdate": "2022/02/12",
+        "phone": "+250786929672",
+        "price":"$1/kg"
+      },
+      {
+        "productname": "Tomatoes",
+        "description": "This juicy orange-red tomato variety is an extra tasty, very early tomato! Since this tomato has minimal seeds to digest, it offers a very outstanding taste.",
+        "availablequantity": "200kg",
+        "images": ["https://images.newscientist.com/wp-content/uploads/2021/07/19142457/20-july_tomato-nervous-system.jpg"],
+        "posteddate": "2022/02/03",
+        "expirationdate": "2022/03/12",
+        "phone": "+250786929672",
+        "price":"$2/kg"
+      }
+
+    
+    
+]

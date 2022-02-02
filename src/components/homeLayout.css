@@ -11,7 +11,9 @@
     background-image: url(https://www.eac.int/images/Press_Releases/coffee.jpg);
     width: 100%;
      align-items: center;
-      display: flex;
+     background-size: cover;
+     background-repeat: no-repeat;
+      /* display: flex; */
     
         /* margin-top: 50px; */
         /* margin-left: 120px; */
@@ -49,10 +51,12 @@
 
 }
 .description h1{
-  margin-right: 22%;
+  margin-right: 16%;
+  font-family: sans-serif;
 }
 .description p{
-  margin-right: 22%;
+  margin-right: 16%;
+  font-family: sans-serif;
 }
 
 .rows-container{
@@ -63,7 +67,7 @@
 .row1{
     height: 90vh;
     width:30%;
-    background-color:wheat;
+    background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
     
@@ -71,7 +75,7 @@
 .row2{
     height: 90vh;
     width:35%;
-    background-color:wheat;
+    background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
 
@@ -79,7 +83,7 @@
 .row3{
     height: 90vh;
     width:30%;
-    background-color:wheat;
+    background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
 
@@ -183,4 +187,7 @@ margin-top: 15px;
   
 
 }
+
+
+
 

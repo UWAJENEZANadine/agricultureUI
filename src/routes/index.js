@@ -7,7 +7,9 @@ import ProductView from "../views/product";
 
 import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
-import SignUp from "../views/SignUp"
+import OurProducts from "../views/products";
+import SignUp from "../views/SignUp";
+import SignUp from "../views/SignUp
 
 const Index=()=>{
     return(
@@ -21,6 +23,7 @@ const Index=()=>{
 
             <Route path="/AboutUs" element={<AboutUs/>}/>
             <Route path="/SignUp" element={<SignUp/>}/>
+            <Route path="/products" element={<OurProducts/>}/>
 
 
         </Routes>
