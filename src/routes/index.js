@@ -4,7 +4,9 @@ import {Routes, Route} from "react-router-dom";
 import Home from "../views/home";
 import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
-import SignUp from "../views/SignUp"
+import OurProducts from "../views/products";
+import SignUp from "../views/SignUp";
+
 const Index=()=>{
     return(
         <Routes>
@@ -14,6 +16,7 @@ const Index=()=>{
 
             <Route path="/AboutUs" element={<AboutUs/>}/>
             <Route path="/SignUp" element={<SignUp/>}/>
+            <Route path="/products" element={<OurProducts/>}/>
 
         </Routes>
     )

@@ -6,9 +6,13 @@ const Header = () => {
   return (
     <>
       <div className="logo-container">
+         
         <div className="home1-container">
-       
+      
           <img src={logo} />
+          <h1>IGIRE MUHINZI</h1>
+          {/* <div id="google_translate_element"></div> */}
+         
           <div className="nav-nav">
           
             <div className="nav-container">
@@ -16,8 +20,9 @@ const Header = () => {
               <a href="SignUp">SignUp</a>
               <a href="SignIn">SignIn</a>
               <a href="AboutUs">About Us</a>
-              <a href="product">Product</a>
-              {/* <div id="google_translate_element"></div> */}
+              <a href="product">Products</a>
+              
+             
 
             </div>
           </div>

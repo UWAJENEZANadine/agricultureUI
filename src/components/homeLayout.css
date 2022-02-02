@@ -3,7 +3,9 @@
     background-image: url(https://www.eac.int/images/Press_Releases/coffee.jpg);
     width: 100%;
      align-items: center;
-      display: flex;
+     background-size: cover;
+     background-repeat: no-repeat;
+      /* display: flex; */
     
         /* margin-top: 50px; */
         /* margin-left: 120px; */
@@ -41,10 +43,12 @@
 
 }
 .description h1{
-  margin-right: 22%;
+  margin-right: 16%;
+  font-family: sans-serif;
 }
 .description p{
-  margin-right: 22%;
+  margin-right: 16%;
+  font-family: sans-serif;
 }
 
 .rows-container{
@@ -55,7 +59,7 @@
 .row1{
     height: 90vh;
     width:30%;
-    background-color:wheat;
+    background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
     
@@ -63,7 +67,7 @@
 .row2{
     height: 90vh;
     width:35%;
-    background-color:wheat;
+    background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
 
@@ -71,7 +75,7 @@
 .row3{
     height: 90vh;
     width:30%;
-    background-color:wheat;
+    background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
 
@@ -173,5 +177,39 @@ margin-top: 15px;
 .row3-description a:hover {
   color:black;
   
+
+}
+.pro-description{
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(0, 92, 128);
+}
+.full-container{
+  height: 200vh;
+  width: 100%;
+  background-color: brown;
+  display: flex
+  
+
+
+}
+.Singleproduct-container{
+  height: 70vh;
+  width: 90%;
+  background-color: green;
+  padding: 80px 20px 80px 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  /* display: flex; */
+  /* flex-shrink: calc(); */
+ 
+
+  
+}
+.one-product{
+  height: 45vh;
+  width: 100%;
+  background-color: cornsilk;
+
 
 }
