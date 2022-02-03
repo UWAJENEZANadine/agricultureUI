@@ -9,7 +9,7 @@ import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
 import OurProducts from "../views/products";
 import SignUp from "../views/SignUp";
-import SignUp from "../views/SignUp
+
 
 const Index=()=>{
     return(

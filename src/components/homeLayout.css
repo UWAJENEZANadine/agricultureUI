@@ -63,9 +63,10 @@
     height: 105vh;
     width: 100%;
     display: flex;
+    
 }
 .row1{
-    height: 90vh;
+    height: 85vh;
     width:30%;
     background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
@@ -73,7 +74,7 @@
     
 }
 .row2{
-    height: 90vh;
+    height: 85vh;
     width:35%;
     background-color:#3bd3db;
     margin: 10vh 10px 0px 20px;
@@ -81,11 +82,12 @@
 
 }
 .row3{
-    height: 90vh;
+    height: 86vh;
     width:30%;
     background-color:#3bd3db;
-    margin: 10vh 10px 0px 20px;
+    margin: 10vh 10px 40px 20px;
     border-radius: 50px;
+    padding: 10px;
 
 
 }
