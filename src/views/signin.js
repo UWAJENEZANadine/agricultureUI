@@ -1,13 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, {useState} from "react";
 import HomeLayout from "../components/homeLayout";
 import "antd/dist/antd.css";
 import "../css/signin.css";
-import { Form, Input, Button, Checkbox } from "antd";
+import { Form, Input, Button, Checkbox, Modal } from "antd";
 import {
   UserOutlined,
   LockOutlined,
-  FacebookOutlined,
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 const Signin = () => {
@@ -18,8 +16,20 @@ const Signin = () => {
   };
   const navigate = useNavigate();
 
+  const [visible, setVisible] = useState(true);
+
+  
+
   return (
     <HomeLayout>
+      <div className="signUp-page">
+       <Modal
+        className="register-model-form"
+        visible={visible}
+        width="50%"
+        onOk={() => setVisible(true)}
+        onCancel={() => setVisible(false)}
+      >
       <div className="signin-container">
         <h1>Log in here please!</h1>
         <Form name="normal_login" className="login-form"  initialValues={{remember: true,}} onFinish={onFinish} >
@@ -62,10 +72,9 @@ const Signin = () => {
           </Button>
           Or <a href="./SignUp">register now!</a>
         </Form>
-        {/* <div className='icons'>
-        <h2>or sign in with</h2>
-    <a href="" style={{width:"30px"}}><FacebookOutlined /></a>
-    </div> */}
+       
+      </div>
+      </Modal>
       </div>
     </HomeLayout>
   );

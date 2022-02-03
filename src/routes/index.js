@@ -2,9 +2,7 @@
 import React from "react"
 import {Routes, Route, useLocation } from "react-router-dom";
 import Home from "../views/home";
-
 import ProductView from "../views/product";
-
 import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
 import SignUp from "../views/SignUp"
@@ -13,6 +11,8 @@ import DashLayout from "../components/DashboadLayoutForSeller"
 import AllProduct from "../views/dashboard/allProducts"
 import AllOrder from "../views/dashboard/orders";
 const isUserLogedIn = localStorage.getItem("userLogedIn");
+
+
 
 
 const Index=()=>{
@@ -29,6 +29,7 @@ const Index=()=>{
 
             <Route path="/AboutUs" element={<AboutUs/>}/>
             <Route path="/SignUp" element={<SignUp/>}/>
+          
 
 
         </Routes>

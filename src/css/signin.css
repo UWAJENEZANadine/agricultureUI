@@ -1,40 +1,15 @@
-.login-form {
-    max-width: 300px;
-    margin-left: 280px;
-    padding-top: 20px;
+
+  .signin-container h1{
+     text-align: center;
+     font-weight: 900;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  .register-model-form{
+    margin-top: 100px;
    
   }
-  .login-form-forgot {
-    float: right;
-  }
-  .ant-col-rtl .login-form-forgot {
-    float: left;
-  }
-  .login-form-button {
-    width: 100%;
-  }
-  .signin-container{
-      /* background-color: rgb(65, 63, 63); */
-      height: 100%;
-      width: 100%;
-      /* border-radius: 50px; */
-      /* margin-top: 100px; */
-      margin-left: 150px;
-  }
-  .signin-container h1{
-     margin-left: 300px;     
-     color: rgb(2, 1, 1);
-     margin-top: 100px;
-
-
-  }
-  .icons{
-      background-color: blanchedalmond;
-      width: 200px;
-      height: 90px;
-      margin-left: 290px;
-      margin-top: 80px;
-  }
-  .icons h2{
-      text-align: center;
+  .signUp-page{
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.445);
   }
