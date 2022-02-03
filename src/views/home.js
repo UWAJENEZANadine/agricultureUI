@@ -6,8 +6,8 @@ const Home=()=>{
     return(
         <HomeLayout>
 <div className="animation" style={{backgroundsize:"cover"}}></div>
-<div className="description"><h1 style={{color:"black"}}>IGIRE MUHINZI</h1><br/>
-<p style={{color:"black"}}>E-COMMERCE PLATFORM FOR BUYING AND SELLING AGRICULTURE PRODUCTS </p>
+<div className="description" ><h1 style={{color:"black"}}>IGIRE MUHINZI</h1><br/>
+<p1 style={{color:"black" ,fontsize:"23px"}}>E-COMMERCE PLATFORM FOR BUYING AND SELLING AGRICULTURE PRODUCTS </p1>
 <div className="rows-container">
 
      <div className="row1">
