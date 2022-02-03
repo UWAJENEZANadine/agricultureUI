@@ -33,12 +33,17 @@ const NewProductPost= () => {
         <Input />
       </Form.Item>
       <Space>
-        <Form.Item name="date" label="date" rules={[{ required: true }]}>
+        <Form.Item name="posted_date" label="posted_date" rules={[{ required: true }]}>
+          <DatePicker />
+        </Form.Item>
+      </Space>
+      <Space>
+        <Form.Item name="expired_date" label="expired_date" rules={[{ required: true }]}>
           <DatePicker />
         </Form.Item>
       </Space>
       <Form.Item name="price" label="price" rules={[{ required: true }]}>
-        <InputNumber />
+        <InputNumber placeholder="......kg" />
       </Form.Item>
 
       <Link to="/home">

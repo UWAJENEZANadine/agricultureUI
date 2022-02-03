@@ -3,31 +3,33 @@ import { Space, Table } from "antd"
 import { EyeOutlined } from "@ant-design/icons";
 import { DeleteOutlined } from "@ant-design/icons";
 import { EditOutlined } from "@ant-design/icons";
+import allAvailableProducts from "../../assets/constants/product.json"
+
 
 
 const columns = [
     {
-        title: 'productname',
-        dataIndex: 'productname',
-        key: 'productname',
+        title: 'PRODUCT NAME',
+        dataIndex: 'title',
+        key: 'title',
     },
     {
-        title: "description",
+        title: "DESCRIPTION",
         dataIndex: "description",
         key: "description",
     },
     {
-        title: "availablequantity",
-        dataIndex: "availablequantity",
-        key: "availablequantity",
+        title: "AVAILABLE QUANTITY",
+        dataIndex: "available_quantity",
+        key: "available_quantity",
     },
     {
-        title: "date",
-        dataIndex: "date",
-        key: "date",
+        title: "POSTED DATE",
+        dataIndex: "posted_date",
+        key: "posted_date",
     },
     {
-        title: "price",
+        title: "PRICE",
         dataIndex: "price",
         key: "price",
     },
@@ -46,42 +48,7 @@ const columns = [
     }
 ];
 
-const column = [
-    {
-        title: 'firstName',
-        dataIndex: 'firstName',
-        key: 'firstName',
-    },
-    {
-        title: "lastName",
-        dataIndex: "lastName",
-        key: "lastName",
-    },
-    {
-        title: "email",
-        dataIndex: "email",
-        key: "email",
-    },
-    {
-        title: "phone",
-        dataIndex: "phone",
-        key: "phone",
-    },
-    {
-        title: "Actions",
-        key: " actions",
-        fixed:"right",
-        width: 100,
-        render:()=>(
-            <Space size="middle">
-                <a href="" style={{color:"green"}}>Accept </a>
-                <a href="" style={{color:"red"}}>Decline </a>
-          
-            </Space>
-        )
-    }
-   
-];
+
 
 
 
@@ -89,8 +56,7 @@ const AllProduct = () => {
 
     return (
         <>
-        <Table columns={columns} />
-        <Table columns={column}  />
+        <Table columns={columns}  dataSource={allAvailableProducts}/>
        </>
 
     )

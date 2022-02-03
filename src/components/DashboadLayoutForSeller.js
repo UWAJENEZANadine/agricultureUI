@@ -7,8 +7,9 @@ import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
   UserOutlined,
-  VideoCameraOutlined,
+  StarOutlined,
   UploadOutlined,
+  ShoppingCartOutlined,
 } from "@ant-design/icons";
 
 
@@ -29,11 +30,14 @@ const DashLayout = ({children}) => {
           <Menu.Item key="1" icon={<UserOutlined />}>
             <Link to="/dash/newProduct">create a product</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+          <Menu.Item key="2" icon={<StarOutlined />}>
             <Link to="/dash/allProducts">Manage your allProducts</Link>
           </Menu.Item>
+          <Menu.Item key="3" icon={<ShoppingCartOutlined />}>
+            <Link to="/dash/allorder"> Orders</Link>
+          </Menu.Item>
           <Menu.Item
-            key="3"
+            key="4"
             icon={<UploadOutlined />}
             onClick={() => localStorage.removeItem("userLogedIn")}
           >
