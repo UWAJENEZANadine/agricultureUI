@@ -1,7 +1,25 @@
 .card-container{
 
     background:rgb(48, 48, 58);
-    height:35vh;
+    height:50vh;
     width:80%;
     margin: 10px;
+    display: flex;
+}
+.image{
+    width: 30%;
+    height: 50vh;
+    overflow: hidden;
+}
+.other{
+    width: 50%;
+    height: 50vh;
+}
+.other h1{
+    color: white;
+}
+.other p{
+    color: white;
+    margin-left: 30px;
+    font-family: sans-serif;
 }

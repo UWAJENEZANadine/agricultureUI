@@ -11,17 +11,19 @@ const ProductCard = ({ data }) => {
     <>
       
       <div className="card-container">
-          <div ></div>
+          <div className="image" >
       <img src={data.image[0]} />
+      </div>
+      <div className="other">
           <h1>{data.title}</h1>
-          <p>description{data.description}</p>
-          <p>available_quantity{data.available_quantity}</p>
-          <p>posted_date{data.posted_date}</p>
-          <p>expired_date{data.expired_date}</p>
-          <p>price{data.price}</p>
-          <p>seller_name{data.seller_name}</p>
-          <p>seller_phone{data.seller_phone}</p>
-        
+          <p>description{data.description}<br/><br/>
+          available_quantity{data.available_quantity}<br/>
+          posted_date{data.posted_date}<br/>
+          expired_date{data.expired_date}<br/>
+          price{data.price}<br/>
+          seller_name{data.seller_name}<br/>
+          seller_phone{data.seller_phone}</p>
+          </div>
       </div>
     </>
   );
