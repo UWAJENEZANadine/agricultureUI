@@ -22,7 +22,7 @@ const AboutUs = () => {
           <p>
             We are innovators in agricultural business. We can call ourselves
             the innovators in agricultural business. And these are not just
-            words. They have solid background. You can find real proof reading
+            words.  You can find real proof reading
             more about our company.
           </p>
         </div>
@@ -35,8 +35,7 @@ const AboutUs = () => {
           <p>
             Providing quality agricultural products. We supply quality fruit and
             vegetables to different countries all over the world. Our crops are
-            carefully gathered and stored to get to our customers fresh. Our
-            cattle graze on the green sunny meadows.
+            carefully gathered and stored to get to our customers fresh.
           </p>
         </div>
 
