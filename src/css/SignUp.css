@@ -1,21 +1,32 @@
 .form-background {
-  background-color: rgba(209, 189, 12, 0.616);
+  background-color: whitesmoke;
   height: 150vh;
+}
+.form-container{
+  background-color:#057177 ;
+  height:115vh;
+  width: 50%;
+  margin-left: 350px;
+  padding: 10px;
+  border-radius: 70px;
+ 
 }
 
 h1 {
   text-align: center;
   font-weight: 700;
+  margin-top: 20px;
 }
 .login-form-button {
   width: 150px;
 }
 
 .register-form{
-    width: 40%;
-    min-height: 92vh;
-    margin-left: 350px ;
-    padding: 30px;
-   
+    width: 73%;
+    /* min-height: 92vh; */
+     margin-left: 80px ;
+     margin-top: 80px; 
+     
+    
 }
 
