@@ -9,32 +9,43 @@ import allAvailableProducts from "../../assets/constants/product.json"
 
 const columns = [
     {
-        title: 'PRODUCT NAME',
-        dataIndex: 'title',
-        key: 'title',
+        productname: 'PRODUCT NAME',
+        dataIndex: 'productname',
+        key: 'productname',
     },
     {
-        title: "DESCRIPTION",
+        productname: "DESCRIPTION",
         dataIndex: "description",
         key: "description",
     },
     {
-        title: "AVAILABLE QUANTITY",
-        dataIndex: "available_quantity",
-        key: "available_quantity",
+        productname: "AVAILABLE QUANTITY",
+        dataIndex: "availablequantity",
+        key: "availablequantity",
     },
     {
-        title: "POSTED DATE",
-        dataIndex: "posted_date",
-        key: "posted_date",
+        productname: "POSTED DATE",
+        dataIndex: "posteddate",
+        key: "posteddate",
     },
     {
-        title: "PRICE",
+        productname: "EXPIRATION DATE",
+        dataIndex: "expirationdate",
+        key: "expirationdate",
+    },
+    {
+       
+        productname: "Phone",
+        dataIndex: "phone",
+        key: "phone",
+    },
+    {
+        productname: "Price",
         dataIndex: "price",
         key: "price",
     },
     {
-        title: "Actions",
+        productname: "Actions",
         key: " actions",
         fixed:"right",
         width: 100,
