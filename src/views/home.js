@@ -6,8 +6,8 @@ const Home=()=>{
     return(
         <HomeLayout>
 <div className="animation" style={{backgroundsize:"cover"}}></div>
-<div className="description"><h1 style={{color:"black"}}>IGIRE MUHINZI</h1><br/>
-<p style={{color:"black"}}>E-COMMERCE PLATFORM FOR BUYING AND SELLING AGRICULTURE PRODUCTS </p>
+<div className="description" ><h1 style={{color:"black"}}>IGIRE MUHINZI</h1><br/>
+<p1 style={{color:"black" ,fontsize:"23px"}}>E-COMMERCE PLATFORM FOR BUYING AND SELLING AGRICULTURE PRODUCTS </p1>
 <div className="rows-container">
 
      <div className="row1">
@@ -20,7 +20,7 @@ const Home=()=>{
                   resulting in higher income for the farmers,
                   reduced wastage, and the potential to deliver
                    fresher produce to customers.<br/>
-                   <button><a href="">sell yours</a></button></p>
+                   <button><a href="/SignUp">sell yours</a></button></p>
          </div>
      </div>
 
@@ -31,7 +31,7 @@ const Home=()=>{
              sector development, especially in reducing post-harvest
               wastage through improved market efficiency; increasing financial inclusion; time and cost saving;
              easy market access for inputs; efficient cash management; accountability and transparency.<br/>
-            <button><a href="">Read more </a></button></p>
+            <button><a href="/aboutUs">Read more </a></button></p>
              
     </div>
     </div>
@@ -43,7 +43,7 @@ const Home=()=>{
             they can buy it by just a tap of their fingers! Ease of use, 
             time efficiency and easy payment are some of the few major reasons why E-commerce 
             has taken over today’s retail world.<br/>
-            <button><a href="">Buy Now</a></button></p></div></div> 
+            <button><a href="/SignUp">Buy Now</a></button></p></div></div> 
 </div>
 </div>
 

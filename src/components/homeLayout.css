@@ -53,39 +53,43 @@
 .description h1{
   margin-right: 16%;
   font-family: sans-serif;
+  /* font-size: 15px; */
 }
-.description p{
+.description p1{
   margin-right: 16%;
   font-family: sans-serif;
+  font-size: 18px;
 }
 
 .rows-container{
     height: 105vh;
     width: 100%;
     display: flex;
+    
 }
 .row1{
-    height: 90vh;
+    height: 85vh;
     width:30%;
-    background-color:#3bd3db;
+    background-color:#5ce8f0;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
     
 }
 .row2{
-    height: 90vh;
+    height: 85vh;
     width:35%;
-    background-color:#3bd3db;
+    background-color:#5ce8f0;
     margin: 10vh 10px 0px 20px;
     border-radius: 50px;
 
 }
 .row3{
-    height: 90vh;
+    height: 86vh;
     width:30%;
-    background-color:#3bd3db;
-    margin: 10vh 10px 0px 20px;
+    background-color:#5ce8f0;
+    margin: 10vh 10px 40px 20px;
     border-radius: 50px;
+    
 
 
 }
@@ -119,7 +123,7 @@ margin-top: 15px;
 }
 .row1-description button{
   color: black;
-  background-color: rgb(252, 201, 125);
+  background-color: rgb(248, 205, 126);
   margin-top: 25px;
   height: 25px; 
   border-radius: 10px;
@@ -144,7 +148,7 @@ margin-top: 15px;
 }
 .row2-description button{
   color: black;
-  background-color: rgb(252, 201, 125);
+  background-color: rgb(248, 205, 126);
   margin-top: 25px;
   height: 25px; 
   border-radius: 10px;
@@ -170,7 +174,7 @@ margin-top: 15px;
 }
 .row3-description button{
   color: black;
-  background-color: rgb(252, 201, 125);
+  background-color: rgb(248, 205, 126);
   margin-top: 10px;
   height: 25px; 
   border-radius: 10px;

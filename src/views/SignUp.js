@@ -27,6 +27,7 @@ const SignUp = () => {
       > */}
       <div className="form-background">
         <br /><br /><br /><br /><br /><br />
+       <div className="form-container">
         <h1>CREATE ACCOUNT</h1>
         <Form
           name="normal_register"
@@ -157,6 +158,7 @@ const SignUp = () => {
             </Button>
           </Form.Item>
         </Form>
+        </div>
         </div>
       {/* </Modal> */}
     </HomeLayout>

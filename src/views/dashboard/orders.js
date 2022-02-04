@@ -3,6 +3,7 @@ import { Space, Table } from "antd"
 import buyerInfo from "../../assets/constants/buyerInfo.json"
 
 
+
 const column = [
     {
         title: 'firstName',
@@ -24,6 +25,8 @@ const column = [
         dataIndex: "phone",
         key: "phone",
     },
+   
+
     {
         title: "Actions",
         key: " actions",

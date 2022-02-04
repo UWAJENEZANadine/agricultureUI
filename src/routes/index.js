@@ -5,7 +5,7 @@ import Home from "../views/home";
 import ProductView from "../views/product";
 import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
-import SignUp from "../views/SignUp"
+import SignUp from "../views/SignUp";
 import NewProductPost from "../views/dashboard/newProduct";
 import DashLayout from "../components/DashboadLayoutForSeller"
 import AllProduct from "../views/dashboard/allProducts"
