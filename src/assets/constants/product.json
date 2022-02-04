@@ -3,7 +3,7 @@
         "title": "Coffe",
         "description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus",
         "available_quantity": "100kg",
-        "image": ["https://www.newtimes.co.rw/sites/default/files/main/articles/2019/02/18/rwandans.jpg"],
+        "image": ["https://www.newtimes.co.rw/sites/default/files/main/articles/2019/02/18/rwandans.jpg", "https://www.ktpress.rw/wp-content/uploads/2018/09/Coffee.jpg"],
         "posted_date": "10/August",
         "expired_date": "15 August",
         "price": "400frw/kg",
