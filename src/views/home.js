@@ -22,7 +22,9 @@ const Home = () => {
       </div>
 
 
+
       <h1 style={{color:"rgb(131, 76, 5)"}}>BUY OUR CURRENT PRODUCT</h1>
+
 
       <Carousel variant="dark" className="slide Carousel-fade container-corousel">
         <Carousel.Item>
