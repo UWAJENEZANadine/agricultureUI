@@ -5,6 +5,7 @@
     line-height: 64px;
     cursor: pointer;
     transition: color 0.3s;
+    
   }
   
   .trigger:hover {
@@ -27,7 +28,7 @@
    
   }
   Table{
-    background-color: rgba(255, 99, 71, 0.103);
+   
     font-weight: 700;
     font-size: medium;
 

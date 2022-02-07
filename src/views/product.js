@@ -3,9 +3,6 @@ import HomeLayout from "../components/homeLayout";
 import ProductCard from "../components/productcard";
 
 
-
-
-
 import  allProductData from '../assets/constants/product.json';
 
 

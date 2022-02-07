@@ -6,7 +6,7 @@
 }  */
 
 
-.animation{
+/* .animation{
     height:130vh;
     background-image: url(https://www.eac.int/images/Press_Releases/coffee.jpg);
     width: 100%;
@@ -17,13 +17,13 @@
     
         /* margin-top: 50px; */
         /* margin-left: 120px; */
-        animation:animation 30s infinite  ;
+        /* animation:animation 30s infinite  ;
       }
-        @keyframes animation {
+        @keyframes animation { */ */
         /* 40%{
                 background:url(https://thumbs.dreamstime.com/b/african-farmer-man-standing-organic-farm-wearing-native-clothes-agriculture-cultivation-concept-192460086.jpg)
               } */
-          25%{
+          /* 25%{
             background:url(https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/fruit.jpg?quality=82&strip=all)
           } 
            40%{
@@ -40,7 +40,7 @@
           }
           80%{
             background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmu1Xay-8tSniMRxmm83zkR2j0q9hs_HU3lbgDmXEssW-j6SfvKGx6Q8CxontrGAxNnQ&usqp=CAU)}
-}
+} */
 .description{
     height: 120vh;
     width: 100%;
@@ -50,147 +50,76 @@
     /* margin-left: 40%; */
 
 }
-.description h1{
-  margin-right: 16%;
-  font-family: sans-serif;
-  /* font-size: 15px; */
+.images-slide{
+  height: 70vh;
+  margin-left: 270px;
 }
-.description p1{
-  margin-right: 16%;
-  font-family: sans-serif;
-  font-size: 18px;
+.quote-div-container{
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
 }
-
-.rows-container{
-    height: 105vh;
-    width: 100%;
-    display: flex;
-    
-}
-.row1{
-    height: 85vh;
-    width:30%;
-    background-color:#5ce8f0;
-    margin: 10vh 10px 0px 20px;
-    border-radius: 50px;
-    
-}
-.row2{
-    height: 85vh;
-    width:35%;
-    background-color:#5ce8f0;
-    margin: 10vh 10px 0px 20px;
-    border-radius: 50px;
-
-}
-.row3{
-    height: 86vh;
-    width:30%;
-    background-color:#5ce8f0;
-    margin: 10vh 10px 40px 20px;
-    border-radius: 50px;
-    
+.quote-div{
+  width: 40%;
+  height: 60vh;
+  box-shadow: 3px 2px 3px 3.5px  rgba(21, 37, 37, 0.842);
+  background-color: rgb(252, 243, 252);
+  font-size: 24px;
+  font-family: Trebuchet ;
+  padding: 15px;
+  margin-left: 50px;
 
 
 }
-.image1{
-    width: 100%;
-    background-image:url(https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a);
-    height: 50vh;
-    border-radius: 50px 50px 50px 50px;
-    
-}
-.image2{
-    width: 100%;
-    background-image:url("../assets/images/bridge.jpg");
-    
-    height: 50vh;
-    border-radius: 50px 50px 50px 50px;
-}
-.image3{
-    width: 100%;
-    background-image:url(https://s3.envato.com/files/312326603/181_1R3A9259.jpg);
-    height: 50vh;
-    background-size:cover;
-    border-radius: 50px 50px 50px 50px;
-}
-.row1-description p{
-  width:90%;
-  height: 40vh;
-  color: black;
-margin-left: 20px;
-margin-top: 15px;
-}
-.row1-description button{
-  color: black;
-  background-color: rgb(248, 205, 126);
-  margin-top: 25px;
-  height: 25px; 
-  border-radius: 10px;
-  width:100px;
-  border:solid rgb(3, 3, 41);
-  
-}
-.row1-description a{
+.quote-button{
+  margin-left: 250px;
+  border-radius: 15px;
+  padding: 5px;
+  border: 2px solid rgba(21, 37, 37, 0.842);
+  box-shadow: 2px 2px 2px 3.5px  rgba(21, 37, 37, 0.842);
+  background-color: rgb(252, 243, 252);
   text-decoration: none;
-
-}
-.row1-description a:hover {
-  color:black;
-  }
-
-  .row2-description p{
-  width:90%;
-  height: 40vh;
+  font-family: Trebuchet ;
   color: black;
-margin-left: 20px;
-margin-top: 15px;
-}
-.row2-description button{
-  color: black;
-  background-color: rgb(248, 205, 126);
-  margin-top: 25px;
-  height: 25px; 
-  border-radius: 10px;
-  width:100px;
-  border:solid rgb(3, 3, 41);;
-  
-}
-.row2-description a{
-  text-decoration: none;
+  font-weight: 800;
+
 
 }
-.row2-description a:hover {
-  color:black;
-  
 
+.quote-div a:hover{
+  background-color: chocolate;
+  color: white;
+ 
 }
-.row3-description p{
-  width:90%;
-  height: 40vh;
-  color: black;
-margin-left: 20px;
-margin-top: 15px;
+.quote-div-image img{
+  width: 95%;
+  height: 70vh;
+  margin-top: 50px;
+  margin-right: 100px;
 }
-.row3-description button{
-  color: black;
-  background-color: rgb(248, 205, 126);
-  margin-top: 10px;
-  height: 25px; 
-  border-radius: 10px;
-  width:100px;
-  border:solid rgb(3, 3, 41);
-  
+.container-corousel{
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
-.row3-description a{
-  text-decoration: none;
+.caption-images h5{
+  color: white;
+  margin-top: -250px;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: Trebuchet ;
+}
+.caption-images p{
+  font-weight: 900;
+  font-family: Trebuchet ;
+  margin-top: 20px;
+  margin-right: 60px;
+  color: white;
+  font-size: 20px;
+}
 
-}
-.row3-description a:hover {
-  color:black;
-  
-
-}
 
 
 

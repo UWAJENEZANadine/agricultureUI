@@ -5,24 +5,27 @@ import buyerInfo from "../../assets/constants/buyerInfo.json"
 
 const column = [
     {
-        title: 'firstName',
+        title: 'First Name',
         dataIndex: 'firstName',
         key: 'firstName',
     },
     {
-        title: "lastName",
+        title: "Last Name",
         dataIndex: "lastName",
-        key: "lastName",
+        key: "lastNamee",
     },
     {
-        title: "email",
+        title: "Email",
         dataIndex: "email",
         key: "email",
     },
+   
+
     {
-        title: "phone",
-        dataIndex: "phone",
-        key: "phone",
+        title: "Status",
+        dataIndex: "status",
+        key: "status",
+        
     },
     {
         title: "Actions",
@@ -46,7 +49,7 @@ const AllOrder = () => {
 
     return (
         <>
-        <Table columns={column}  dataSource={buyerInfo}/>
+        <Table className="bg-dark" columns={column}  dataSource={buyerInfo} />
        </>
 
     )
