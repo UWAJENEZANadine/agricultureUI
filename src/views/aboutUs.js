@@ -1,7 +1,7 @@
 import React from "react";
 import HomeLayout from "../components/homeLayout";
 import "../css/aboutUs.css";
-import { DribbbleSquareOutlined } from "@ant-design/icons";
+import { DribbbleSquareOutlined, FieldBinaryOutlined, FieldNumberOutlined   } from "@ant-design/icons";
 
 
 const AboutUs = () => {
@@ -15,7 +15,7 @@ const AboutUs = () => {
 
       <div className="about1-container">
         <div className="bout-col1">
-          <DribbbleSquareOutlined
+        <FieldBinaryOutlined 
             className="antdd-style"
             style={{ fontSize: "3em" }}
           />
@@ -28,7 +28,7 @@ const AboutUs = () => {
         </div>
 
         <div className="about-col2">
-          <DribbbleSquareOutlined
+        <FieldNumberOutlined 
             className="antdd-style"
             style={{ fontSize: "3em" }}
           />

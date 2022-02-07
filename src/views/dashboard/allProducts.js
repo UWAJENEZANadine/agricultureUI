@@ -13,11 +13,6 @@ const columns = [
         dataIndex: 'title',
         key: 'title',
     },
-    // {
-    //     title: "DESCRIPTION",
-    //     dataIndex: "description",
-    //     key: "description",
-    // },
     {
         title: "AVAILABLE QUANTITY",
         dataIndex: "available_quantity",
@@ -67,7 +62,7 @@ const AllProduct = () => {
 
     return (
         <>
-        <Table columns={columns}  dataSource={allAvailableProducts}/>
+        <Table className="bg-dark"  columns={columns}  dataSource={allAvailableProducts}/>
        </>
 
     )

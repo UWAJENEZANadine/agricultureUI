@@ -28,32 +28,37 @@ const DashLayout = ({children}) => {
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEC7KOCi__hsFKdu0R1GrjfjsEDFxHfagEw&usqp=CAU" style={{width:"60px", height:"60px", borderRadius:"30px", margin:"30px 10px 30px 15px"  }}/>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1" icon={<UserOutlined />}>
-            <Link to="/dash/newProduct">create a product</Link>
+            <Link style={{ textDecoration:"none" }} to="/dash/newProduct">create a product</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<StarOutlined />}>
-            <Link to="/dash/allProducts">Manage your allProducts</Link>
+            <Link style={{ textDecoration:"none" }} to="/dash/allProducts">Manage your allProducts</Link>
           </Menu.Item>
           <Menu.Item key="3" icon={<ShoppingCartOutlined />}>
-            <Link to="/dash/allorder"> Orders</Link>
+            <Link style={{ textDecoration:"none" }} to="/dash/allorder"> Orders</Link>
           </Menu.Item>
           <Menu.Item
             key="4"
             icon={<UploadOutlined />}
             onClick={() => localStorage.removeItem("userLogedIn")}
           >
-            <Link to="/home">Logout</Link >
+            <Link style={{ textDecoration:"none" }}to="/home">Logout</Link >
           </Menu.Item>
         </Menu>
       </Sider>
       <Layout className="site-layout">
         <Header className="site-layout-background" style={{ padding: 0 }}>
+           
+       
           {React.createElement(
             collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+            
             {
                 className: 'trigger',
                 onClick: toggle,
             }
-          )}
+            
+          ) }<h1 style={{marginLeft:"50px", marginTop:"-50px"}}>ADMIN MANAGEMENT INFORMATION</h1>
+          
         </Header>
         <Content
           className="site-layout-background"

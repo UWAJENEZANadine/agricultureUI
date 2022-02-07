@@ -1,59 +1,71 @@
 import React from "react";
 import HomeLayout from "../components/homeLayout";
-import "./home.css"
-const Home=()=>{
+import { Carousel } from "react-bootstrap";
+import "./home.css";
+const Home = () => {
+  return (
+    <HomeLayout>
+      <div className="quote-div-container">
+        <div className="quote-div">
+          <p>
+            The use of our E-commerce platform plays an important role in
+            agriculture sector development, especially in reducing post-harvest
+            wastage through improved market efficiency; increasing financial
+            inclusion; time and cost saving; easy market access for inputs;
+            efficient cash management; accountability and transparency
+            <a href="/product" className="quote-button"> Buy Now</a>
+          </p>
+        </div>
+        <div className="quote-div-image">
+          <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" />
+        </div>
+      </div>
 
-    return(
-        <HomeLayout>
-<div className="animation" style={{backgroundsize:"cover"}}></div>
-<div className="description" ><h1 style={{color:"black"}}>IGIRE MUHINZI</h1><br/>
-<p1 style={{color:"black" ,fontsize:"23px"}}>E-COMMERCE PLATFORM FOR BUYING AND SELLING AGRICULTURE PRODUCTS </p1>
-<div className="rows-container">
 
-     <div className="row1">
-         <div className="image1"></div>
-         <div className="row1-description">
-              <p> 
-                 Agri e-commerce also increases farmers' access to new markets and 
-                 adds transparency to the value chain. It enables
-                  farmers to bypass several intermediaries, 
-                  resulting in higher income for the farmers,
-                  reduced wastage, and the potential to deliver
-                   fresher produce to customers.<br/>
-                   <button><a href="/SignUp">sell yours</a></button></p>
-         </div>
-     </div>
 
-    <div className="row2">
-    <div className="image2"></div>
-    <div className="row2-description">
-        <p>The use of our E-commerce platform plays an important role in agriculture
-             sector development, especially in reducing post-harvest
-              wastage through improved market efficiency; increasing financial inclusion; time and cost saving;
-             easy market access for inputs; efficient cash management; accountability and transparency.<br/>
-            <button><a href="/aboutUs">Read more </a></button></p>
-             
-    </div>
-    </div>
-    <div className="row3">
-    <div className="image3"></div>
-    <div className="row3-description">
-        <p>Nowadays, it gets really hard for people to reach out to their 
-            favourite stores just to fetch their favourite products when 
-            they can buy it by just a tap of their fingers! Ease of use, 
-            time efficiency and easy payment are some of the few major reasons why E-commerce 
-            has taken over today’s retail world.<br/>
-            <button><a href="/SignUp">Buy Now</a></button></p></div></div> 
-</div>
-</div>
+      <h1 style={{color:"rgb(131, 76, 5)"}}>BUY OUR CURRENT PRODUCT</h1>
 
-        </HomeLayout>
-       
-              
 
+      <Carousel variant="dark" className="slide Carousel-fade container-corousel">
+        <Carousel.Item>
+          <img
+            className="d-block w-50 images-slide"
+            src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/fruit.jpg?quality=82&strip=all"
+            alt="First slide"
+          />
+          <Carousel.Caption className="caption-images">
+            <h5>Fruits</h5>
+            <p>A fruit is a mature, ripened ovary, along with the contents of the ovary.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50 active images-slide"
+            src="https://www.newtimes.co.rw/sites/default/files/main/articles/2019/02/18/rwandans.jpg"
+            alt="Second slide"
+          />
+          <Carousel.Caption className="caption-images">
+            <h5>Coffe</h5>
+            <p>Coffee is a brewed drink prepared from roasted coffee beans</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50 images-slide"
+            src="https://bakerpedia.com/wp-content/uploads/2021/09/Whole-Grain-Wheat-Flour-e1632990518585-400x400.jpg"
+            alt="Third slide"
+          />
+          <Carousel.Caption className="caption-images">
+            <h5>Wheat</h5>
+            <p>
+            Wheat is the seed of one of several genera of the flowering plant family Fabaceae
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
       
-     
-    )
-}
+    </HomeLayout>
+  );
+};
 
-export default Home
+export default Home;

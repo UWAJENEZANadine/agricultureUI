@@ -70,13 +70,13 @@ const SignUp = () => {
           <Form.Item
             label="phone: "
             name=" phone"
-            rules={[
-              {
-                type:"phone",
-                required: true,
-                message: "Please input valid phone",
-              },
-            ]}
+            // rules={[
+            //   {
+            //     type:"phone",
+            //     required: true,
+            //     message: "Please input valid phone",
+            //   },
+            // ]}
           >
             <Input
               prefix={<PhoneOutlined  className="site-form-item-icon" />}
@@ -148,12 +148,12 @@ const SignUp = () => {
           </Form.Item>
 
           <Form.Item>
-            <Button
+           <Button
               type="primary"
               htmlType="submit"
               className="login-form-button"
             >
-              create account
+               <a href="./product">create account</a>
 
             </Button>
           </Form.Item>

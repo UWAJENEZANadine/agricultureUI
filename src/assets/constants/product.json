@@ -9,6 +9,7 @@
         "price": "400frw/kg",
         "seller_name": "URASHOBOYE-MUHINZI",
         "seller_phone": "+250780564438"
+       
         
         
         
@@ -24,6 +25,7 @@
         "seller_name": "URASHOBOYE-MUHINZI",
         "seller_phone": "+250780564438"
         
+        
     },
     {
         "title": "Vegetables",
@@ -34,7 +36,8 @@
         "expired_date": "20/02/2022",
         "price": "500frw/kg",
         "seller_name": "URASHOBOYE-MUHINZI",
-        "seller_phone": "+250780564438"  
+        "seller_phone": "+250780564438"
+      
     },
     {
         "title": "Potatoes",
@@ -45,7 +48,8 @@
         "expired_date": "30/02/2022",
         "price": "300frw",
         "seller_name": "KORA-UGERE-KURE",
-        "seller_phone": "+250784445678"  
+        "seller_phone": "+250784445678"
+      
     },
     {
         "title": "Beans",
@@ -56,7 +60,10 @@
         "expired_date": "31/04/2022",
         "price": "400frw",
         "seller_name": "URASHOBOYE",
-        "seller_phone": "+2507845732" 
+        "seller_phone": "+2507845732"
+         
+         
+
     },
     {
         "title": "Cassava",
@@ -67,7 +74,8 @@
         "expired_date": "31/04/2022",
         "price": "500frw",
         "seller_name": "URASHOBOYE-MUHINZI",
-        "seller_phone": "+2507845732" 
+        "seller_phone": "+2507845732"
+         
     }
 
     
