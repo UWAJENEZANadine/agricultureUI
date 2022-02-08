@@ -80,7 +80,7 @@ const SignUp = () => {
           >
             <Input
               prefix={<PhoneOutlined  className="site-form-item-icon" />}
-              placeholder=" phone "  style={{marginLeft:"20px", width:"394px"}}
+              placeholder=" phone "  style={{marginLeft:"30px", width:"394px"}}
             />
           </Form.Item>
           <Form.Item
