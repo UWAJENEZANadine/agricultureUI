@@ -41,6 +41,7 @@
           80%{
             background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmu1Xay-8tSniMRxmm83zkR2j0q9hs_HU3lbgDmXEssW-j6SfvKGx6Q8CxontrGAxNnQ&usqp=CAU)}
 } */
+
 .description{
     height: 120vh;
     width: 100%;
@@ -58,7 +59,7 @@
   display: flex;
   width: 100%;
   height: 70vh;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 60px;
 }
@@ -73,9 +74,11 @@
   margin-left: 50px;
 
 
+
+
 }
 .quote-button{
-  margin-left: 250px;
+  margin-left: 200px;
   border-radius: 15px;
   padding: 5px;
   border: 2px solid rgba(21, 37, 37, 0.842);
@@ -85,9 +88,10 @@
   font-family: Trebuchet ;
   color: black;
   font-weight: 800;
-
-
+  
 }
+
+
 
 .quote-div a:hover{
   background-color: chocolate;
@@ -98,7 +102,7 @@
   width: 95%;
   height: 70vh;
   margin-top: 50px;
-  margin-right: 100px;
+  margin-left: 50px;
 }
 .container-corousel{
   margin-bottom: 20px;
@@ -115,7 +119,7 @@
   font-weight: 900;
   font-family: Trebuchet ;
   margin-top: 20px;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   color: white;
   font-size: 20px;
 }
