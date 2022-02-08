@@ -12,9 +12,12 @@
 }
 .home1-container{
     width: 100%;
-    height: 150px; 
+    height: 30vh; 
     padding-top: -40px;
-    background-color: #22aab1;
+    background-color: rgba(36, 24, 15, 0.068);
+  
+  background-repeat: no-repeat; 
+   background-size: cover;
     background-attachment: fixed;
     /* margin-top: -5px; */
  
@@ -22,37 +25,39 @@
 }
 .home1-container h1{
     font-family: sans-serif;
-    margin-top: -120px;
+    margin-top: -180px;
+    /* margin-bottom: 20px; */
     padding-top: 40px;
-    color: rgb(131, 76, 5);
+    color: rgb(138, 74, 10);
 }
 .logo-container{
     display: flex;
     width:100%;
      height: 29vh; 
-    /* background-image: url("https://media.istockphoto.com/photos/wheat-picture-id175443800?k=20&m=175443800&s=612x612&w=0&h=JuSzMASaPI_jZe0pHD4pnKh6LYfahIxbLsZQ70wt-rs="); */
+    /* background-image: url("https://media.isto"); */
     background-attachment: fixed;
+    background-color:white;
     
    
 
 }
 .logo-container img{
-    width: 200px;
-    height: 200px;
-    margin-left: 26%;
-    /* margin-bottom: -40px; */
-    margin-top: -48px;
+    width: 190px;
+    height: 190px;
+    margin-left: 5%;
+    
+    /* margin-bottom: -40px; *
     /* background-color: black; */
     
 }
 
 .nav-nav{
     width: 100%;
-    background-color:rgb(73, 192, 247);
+    /* background-color:rgb(73, 192, 247); */
     /* border-radius: 50px; */
     height: 50px;
-    padding: 10px;
-    margin-top:0px ;
+    padding: 20px;
+    margin-top:25px ;
     color: black;
     text-align: center;
     /* padding-top: 25px; */
@@ -69,7 +74,7 @@
     margin-left: 50px;
     /* color: rgb(253, 251, 251); */
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     font-weight:bold;
     font-family:sans-serif;
     /* background-repeat: no-repeat;  */

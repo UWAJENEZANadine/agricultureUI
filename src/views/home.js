@@ -5,20 +5,20 @@ import "./home.css";
 const Home = () => {
   return (
     <HomeLayout>
+      
       <div className="quote-div-container">
+      {/* <div className="quote-div-image">
+        
+      <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" /> */}
         <div className="quote-div">
-          <p>
-            The use of our E-commerce platform plays an important role in
-            agriculture sector development, especially in reducing post-harvest
-            wastage through improved market efficiency; increasing financial
-            inclusion; time and cost saving; easy market access for inputs;
-            efficient cash management; accountability and transparency
+          <p>IGIRE MUHINZI<br/><br/>
+          E-COMMERCE PLATFORM FOR BUYING AND SELLING OF AGRICULTURAL PRODUCTS
+            <br/><br/>
             <a href="/product" className="quote-button"> Buy Now</a>
           </p>
         </div>
-        <div className="quote-div-image">
-          <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" />
-        </div>
+        
+        {/* </div> */}
       </div>
 
 
@@ -30,7 +30,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-50 images-slide"
-            src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/fruit.jpg?quality=82&strip=all"
+            src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/fruit.jpg?quality=82strip=all"
             alt="First slide"
           />
           <Carousel.Caption className="caption-images">

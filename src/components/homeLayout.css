@@ -55,22 +55,31 @@
   margin-left: 270px;
 }
 .quote-div-container{
-  display: flex;
-  width: 100%;
-  height: 70vh;
+background-image: url("../assets/images/coffee.jpg" );
+ background-repeat: no-repeat;
+ background-size:cover;
+width: 100%;
+  height: 80vh;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .quote-div{
-  width: 40%;
-  height: 60vh;
-  box-shadow: 3px 2px 3px 3.5px  rgba(21, 37, 37, 0.842);
+  width: 33%;
+  height: 20vh;
+  /* background-color: rgb(82, 5, 17); */
+  margin-left: 30%;
+  padding-top: 100px;
+  color:whitesmoke;
+  text-align: center;
+  font-size: 23PX;
+  font-weight: bold;
+  /* box-shadow: 3px 2px 3px 3.5px  rgba(21, 37, 37, 0.842);
   background-color: rgb(252, 243, 252);
   font-size: 24px;
   font-family: Trebuchet ;
   padding: 15px;
-  margin-left: 50px;
+  margin-left: 50px; */
 
 
 }
