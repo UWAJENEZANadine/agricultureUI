@@ -13,11 +13,11 @@ const columns = [
         dataIndex: 'title',
         key: 'title',
     },
-    {
-        title: "DESCRIPTION",
-        dataIndex: "description",
-        key: "description",
-    },
+    // {
+    //     title: "DESCRIPTION",
+    //     dataIndex: "description",
+    //     key: "description",
+    // },
     {
         title: "AVAILABLE QUANTITY",
         dataIndex: "available_quantity",
@@ -29,7 +29,18 @@ const columns = [
         key: "posted_date",
     },
     {
-        title: "PRICE",
+        title: "EXPIRATION DATE",
+        dataIndex: "expired_date",
+        key: "expired_date",
+    },
+    // {
+       
+    //     title: "Phone",
+    //     dataIndex: "seller_phone",
+    //     key: "seller_phone",
+    // },
+    {
+        title: "Price",
         dataIndex: "price",
         key: "price",
     },

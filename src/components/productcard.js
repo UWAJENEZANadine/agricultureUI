@@ -1,16 +1,32 @@
 import React, { useState } from "react";
 import { Drawer } from "antd";
 import "antd/dist/antd.css";
-import "./productCard.css"
+import "./productCard.css";
+import SingleProduct from "./singleproduct";
 
 
 
 const ProductCard = ({ data }) => {
+  const [drawerVisible,setDrawerVisible] = useState(false);
+  const handleclickDrawerVisible = () =>{
+      setDrawerVisible(true);
 
+  }
+  const closeDrawerVisible = ()=> {
+      setDrawerVisible(false);
+  }
+
+  console.log (data.image[0])
   return (
     <>
-      <div className="card-cover">
-      <div className="card-container" style={{color:"black"}}>
+
+
+      
+    <Drawer  title="Well, we have just the solution for you, Free delivery" placement="top" visible={drawerVisible} width={70} height={300}  onClose={() =>closeDrawerVisible()}>
+<SingleProduct data={data}/>
+        </Drawer>
+      
+      <div className="card-container">
           <div className="image" >
       <img src={data.image[0]} />
       </div>
@@ -22,9 +38,13 @@ const ProductCard = ({ data }) => {
           expired_date{data.expired_date}<br/>
           price{data.price}<br/>
           seller_name{data.seller_name}<br/>
-          seller_phone{data.seller_phone}</p>
+          seller_phone{data.seller_phone}
+          </p>
+          <div className="read" onClick={() => handleclickDrawerVisible()}>
+          <label onClick={() => handleclickDrawerVisible()}> Order Now</label>
           </div>
-      </div>
+          </div>
+
       </div>
     </>
   );
