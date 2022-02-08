@@ -1,19 +1,31 @@
 .card-container{
 
-    background:rgb(48, 48, 58);
+    /* background:#057177; */
     height:50vh;
-    width:80%;
+    width:70%;
     margin: 10px;
     display: flex;
+    color: black;
+    margin-left: 15%;
+    box-shadow: 5px 5px 5px  rgba(21, 37, 37, 0.842);
+    background-color: rgb(230, 255, 255);
+    margin-top: 20px;
+    
 }
+/* .card-cover{
+    height: 50vh;
+    width: 100%;
+    background-color: blue; */
+
 .image{
-    width: 30%;
+    width: 45%;
     height: 50vh;
     overflow: hidden;
 }
 .other{
     width: 50%;
     height: 50vh;
+    color: black;
 }
 .other a{
     margin-left: 200px;
@@ -23,16 +35,18 @@
     
 }
 .other h1{
-    color: white;
+    color:black;
 }
 .other p{
-    color: white;
+    color:black;
     margin-left: 30px;
     font-family: sans-serif;
 }
 .read label{
-    color: white;
+    color: black;
+    margin-bottom: 5px;
     margin-left: 70%;
     font-family: sans-serif;
+    margin-bottom: 10px;
 
 }

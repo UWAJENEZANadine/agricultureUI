@@ -19,19 +19,18 @@ const ProductCard = ({ data }) => {
   console.log (data.image[0])
   return (
     <>
+
+
+      
     <Drawer  title="Well, we have just the solution for you, Free delivery" placement="top" visible={drawerVisible} width={70} height={300}  onClose={() =>closeDrawerVisible()}>
 <SingleProduct data={data}/>
         </Drawer>
       
       <div className="card-container">
-
-        
-        
-
           <div className="image" >
       <img src={data.image[0]} />
       </div>
-      <div className="other">
+      <div className="other" >
           <h1>{data.title}</h1>
           <p>description{data.description}<br/><br/>
           available_quantity{data.available_quantity}<br/>

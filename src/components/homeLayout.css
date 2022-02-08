@@ -56,29 +56,84 @@
   margin-left: 270px;
 }
 .quote-div-container{
+background-image: url("../assets/images/coffee.jpg" );
+ background-repeat: no-repeat;
+ background-size:cover;
+width: 100%;
+  height: 80vh;
+  justify-content: space-between;
+
   display: flex;
   width: 100%;
   height: 70vh;
   /* justify-content: space-between; */
+
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .quote-div{
-  width: 40%;
-  height: 60vh;
-  box-shadow: 3px 2px 3px 3.5px  rgba(21, 37, 37, 0.842);
+  width: 33%;
+  height: 20vh;
+  /* background-color: rgb(82, 5, 17); */
+  margin-left: 30%;
+  padding-top: 100px;
+  color:whitesmoke;
+  text-align: center;
+  font-size: 23PX;
+  font-weight: bold;
+  /* box-shadow: 3px 2px 3px 3.5px  rgba(21, 37, 37, 0.842);
   background-color: rgb(252, 243, 252);
   font-size: 24px;
   font-family: Trebuchet ;
   padding: 15px;
   margin-left: 50px;
-
+.image1{
+    width: 100%;
+    background-image:url(https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a);
+    height: 50vh;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+.image2{
+    width: 100%;
+    background-image:url("../assets/images/bridge.jpg");
+    
+    height: 50vh;
+    border-radius: 50px 50px 50px 50px;
+}
+.image3{
+    width: 100%;
+    background-image:url(https://s3.envato.com/files/312326603/181_1R3A9259.jpg);
+    height: 50vh;
+    background-size:cover;
+    border-radius: 50px 50px 50px 50px;
+}
+.row1-description p{
+  width:90%;
+  height: 40vh;
+  color: black;
+margin-left: 20px;
+margin-top: 15px;
+}
+.row1-description button{
+  color: black;
+  background-color: rgb(229, 235, 238);
+  margin-top: 25px;
+  height: 25px; 
+  border-radius: 10px;
+  width:100px;
+  border:solid rgb(3, 3, 41);
+  
+}
+.row1-description a{
+  margin-left: 250px;
 
 
 
 }
 .quote-button{
   margin-left: 200px;
+
   border-radius: 15px;
   padding: 5px;
   border: 2px solid rgba(21, 37, 37, 0.842);
@@ -92,6 +147,23 @@
 }
 
 
+margin-left: 20px;
+margin-top: 15px;
+}
+.row2-description button{
+  color: black;
+  background-color: rgb(229, 241, 243);
+  margin-top: 25px;
+  height: 25px; 
+  border-radius: 10px;
+  width:100px;
+  border:solid rgb(3, 3, 41);;
+  
+}
+.row2-description a{
+  text-decoration: none;
+  font-weight: 800
+
 
 .quote-div a:hover{
   background-color: chocolate;
@@ -104,9 +176,19 @@
   margin-top: 50px;
   margin-left: 50px;
 }
+
+.row3-description button{
+  color: black;
+  background-color: rgb(229, 235, 240);
+  margin-top: 10px;
+  height: 25px; 
+  border-radius: 10px;
+  width:100px;
+  border:solid rgb(3, 3, 41);}
+
 .container-corousel{
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 30px
 }
 .caption-images h5{
   color: white;

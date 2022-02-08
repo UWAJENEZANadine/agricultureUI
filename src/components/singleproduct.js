@@ -14,7 +14,7 @@ const SingleProduct = ()=> {
           
         />
       </label>
-      <button><a href= "./order">Send</a></button>
+      <button><a href= "/order">Send</a></button>
     </form>
     </div>
   )
