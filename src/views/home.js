@@ -17,8 +17,13 @@ const Home = () => {
             <a href="/product" className="quote-button"> Buy Now</a>
           </p>
         </div>
+
         
         {/* </div> */}
+
+        <div className="quote-div-image"  >
+          <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" />
+        </div>
       </div>
 
 
@@ -26,7 +31,9 @@ const Home = () => {
       <h1 style={{color:"rgb(131, 76, 5)"}}>BUY OUR CURRENT PRODUCT</h1>
 
 
+
       <Carousel variant="dark" className="slide Carousel-fade container-corousel">
+
         <Carousel.Item>
           <img
             className="d-block w-50 images-slide"

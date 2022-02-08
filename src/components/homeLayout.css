@@ -41,6 +41,7 @@
           80%{
             background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmu1Xay-8tSniMRxmm83zkR2j0q9hs_HU3lbgDmXEssW-j6SfvKGx6Q8CxontrGAxNnQ&usqp=CAU)}
 } */
+
 .description{
     height: 120vh;
     width: 100%;
@@ -61,6 +62,12 @@ background-image: url("../assets/images/coffee.jpg" );
 width: 100%;
   height: 80vh;
   justify-content: space-between;
+
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  /* justify-content: space-between; */
+
   align-items: center;
   margin-bottom: 20px;
 }
@@ -79,11 +86,7 @@ width: 100%;
   font-size: 24px;
   font-family: Trebuchet ;
   padding: 15px;
-  margin-left: 50px; */
-
-
-}
-
+  margin-left: 50px;
 .image1{
     width: 100%;
     background-image:url(https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a);
@@ -124,6 +127,13 @@ margin-top: 15px;
 }
 .row1-description a{
   margin-left: 250px;
+
+
+
+}
+.quote-button{
+  margin-left: 200px;
+
   border-radius: 15px;
   padding: 5px;
   border: 2px solid rgba(21, 37, 37, 0.842);
@@ -132,6 +142,10 @@ margin-top: 15px;
   text-decoration: none;
   font-family: Trebuchet ;
   color: black;
+  font-weight: 800;
+  
+}
+
 
 margin-left: 20px;
 margin-top: 15px;
@@ -150,7 +164,6 @@ margin-top: 15px;
   text-decoration: none;
   font-weight: 800
 
-}
 
 .quote-div a:hover{
   background-color: chocolate;
@@ -161,7 +174,7 @@ margin-top: 15px;
   width: 95%;
   height: 70vh;
   margin-top: 50px;
-  margin-right: 100px;
+  margin-left: 50px;
 }
 
 .row3-description button{
@@ -188,7 +201,7 @@ margin-top: 15px;
   font-weight: 900;
   font-family: Trebuchet ;
   margin-top: 20px;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   color: white;
   font-size: 20px;
 }
