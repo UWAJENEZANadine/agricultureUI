@@ -9,7 +9,7 @@ const Header = () => {
          
         <div className="home1-container">
       
-          <img src={logo} />
+          <div className ></div><img src={logo} />
           <h1>IGIRE MUHINZI</h1>
           {/* <div id="google_translate_element"></div> */}
          

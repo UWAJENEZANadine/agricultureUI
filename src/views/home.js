@@ -7,9 +7,9 @@ const Home = () => {
     <HomeLayout>
       
       <div className="quote-div-container">
-      {/* <div className="quote-div-image">
+     
         
-      <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" /> */}
+     
         <div className="quote-div">
           <p>
           E-COMMERCE PLATFORM FOR BUYING AND SELLING OF AGRICULTURAL PRODUCTS
@@ -23,7 +23,10 @@ const Home = () => {
         
         {/* </div> */}
 
+
         
+
+
       </div>
 
 
@@ -37,36 +40,49 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-50 images-slide"
-            src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/fruit.jpg?quality=82strip=all"
+            src="https://images.unsplash.com/photo-1542223189-67a03fa0f0bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
             alt="First slide"
           />
           <Carousel.Caption className="caption-images">
             <h5>Fruits</h5>
-            <p>A fruit is a mature, ripened ovary, along with the contents of the ovary.</p>
+            <p>A fruit is a mature, ripened ovary,<br /> along with the contents of the ovary.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-50 active images-slide"
-            src="https://www.newtimes.co.rw/sites/default/files/main/articles/2019/02/18/rwandans.jpg"
+            src="https://www.ledgerinsights.com/wp-content/uploads/2019/03/coffee-blockchain-traceability.jpg"
             alt="Second slide"
           />
           <Carousel.Caption className="caption-images">
             <h5>Coffe</h5>
-            <p>Coffee is a brewed drink prepared from roasted coffee beans</p>
+            <p>Coffee is a brewed drink prepared<br /> from roasted coffee beans</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-50 images-slide"
-            src="https://bakerpedia.com/wp-content/uploads/2021/09/Whole-Grain-Wheat-Flour-e1632990518585-400x400.jpg"
+            src="https://www.macmillandictionary.com/external/slideshow/full/138920_full.jpg"
             alt="Third slide"
           />
+
+
           <Carousel.Caption className="caption-images">
             <h5>Wheat</h5>
             <p>
-            Wheat is the seed of one of several genera of the flowering plant family Fabaceae
+            Wheat is the seed of one of several <br />genera of the flowering plant family Fabaceae
             </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-50 active images-slide"
+            src="https://cathe.com/wp-content/uploads/2018/05/shutterstock_611525876.jpg"
+            alt="fourth slide"
+          />
+          <Carousel.Caption className="caption-images">
+            <h5>Beans</h5>
+            <p>A bean is the seed of one of several <br />genera of the flowering plant family Fabaceae</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

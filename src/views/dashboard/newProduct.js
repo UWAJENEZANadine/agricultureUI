@@ -16,7 +16,7 @@ const NewProductPost= () => {
     <>
 <div className="container-dash-img">
     <div className="dash-image">
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcm_DjuWY-w1uwepHMnM20ghRNcGI7NiXaag&usqp=CAU" />
+     <img src="https://images.unsplash.com/photo-1508674861872-a51e06c50c9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDU1Mjc5MHx8ZW58MHx8fHw%3D&w=1000&q=80" />
      </div>
      <div className="dash-form">
     <Form onFinish={onFinish} className="dash-form" >

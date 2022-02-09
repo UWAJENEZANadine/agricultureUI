@@ -14,7 +14,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-    <div className="footer-container">
+    <div className="bg-dark footer-container">
       <div className="col1">
         <h2>Our services</h2>
         <CloudUploadOutlined style={{fontSize: '2em'}} /><a href="">Posting a product</a><br/><br/>

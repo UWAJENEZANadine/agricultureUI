@@ -53,7 +53,7 @@
 }
 .images-slide{
   height: 70vh;
-  margin-left: 270px;
+  margin-left: 340px;
 }
 .quote-div-container{
 background-image: url("https://static1.bigstockphoto.com/1/8/1/large1500/181475833.jpg");
@@ -69,6 +69,7 @@ background-image: url("https://static1.bigstockphoto.com/1/8/1/large1500/1814758
   align-items: center;
   margin-bottom: 20px;
 }
+
 .quote-div{
   width: 33%;
   height: 20vh;
@@ -129,7 +130,6 @@ margin-top: 15px;
 
 
 
-}
 .quote-button{
   margin-left: 200px;
 
@@ -146,29 +146,6 @@ margin-top: 15px;
 }
 
 
-margin-left: 20px;
-margin-top: 15px;
-}
-.row2-description button{
-  color: black;
-  background-color: rgb(229, 241, 243);
-  margin-top: 25px;
-  height: 25px; 
-  border-radius: 10px;
-  width:100px;
-  border:solid rgb(3, 3, 41);;
-  
-}
-.row2-description a{
-  text-decoration: none;
-  font-weight: 800
-
-
-.quote-div a:hover{
-  background-color: chocolate;
-  color: white;
- 
-}
 .quote-div-image img{
   width: 95%;
   height: 70vh;
@@ -176,14 +153,7 @@ margin-top: 15px;
   margin-left: 50px;
 }
 
-.row3-description button{
-  color: black;
-  background-color: rgb(229, 235, 240);
-  margin-top: 10px;
-  height: 25px; 
-  border-radius: 10px;
-  width:100px;
-  border:solid rgb(3, 3, 41);}
+
 
 .container-corousel{
   margin-bottom: 20px;
@@ -194,15 +164,14 @@ margin-top: 15px;
   margin-top: -250px;
   font-weight: 900;
   font-size: 60px;
-  font-family: Trebuchet ;
+  margin-left: 20px;
 }
 .caption-images p{
   font-weight: 900;
-  font-family: Trebuchet ;
   margin-top: 20px;
-  /* margin-right: 60px; */
+   margin-right: 60px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 .button1{
   
