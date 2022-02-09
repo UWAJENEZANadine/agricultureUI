@@ -56,11 +56,9 @@
   margin-left: 270px;
 }
 .quote-div-container{
-background-image: url("../assets/images/coffee.jpg" );
+background-image: url("https://static1.bigstockphoto.com/1/8/1/large1500/181475833.jpg");
  background-repeat: no-repeat;
  background-size:cover;
-width: 100%;
-  height: 80vh;
   justify-content: space-between;
 
   display: flex;
@@ -75,11 +73,12 @@ width: 100%;
   width: 33%;
   height: 20vh;
   /* background-color: rgb(82, 5, 17); */
-  margin-left: 30%;
-  padding-top: 100px;
-  color:whitesmoke;
+  margin-left: 25%;
+  /* padding-top: 10px; */
+  color: rgb(138, 74, 10);
+
   text-align: center;
-  font-size: 23PX;
+  font-size: 50PX;
   font-weight: bold;
   /* box-shadow: 3px 2px 3px 3.5px  rgba(21, 37, 37, 0.842);
   background-color: rgb(252, 243, 252);
@@ -204,6 +203,24 @@ margin-top: 15px;
   /* margin-right: 60px; */
   color: white;
   font-size: 20px;
+}
+.button1{
+  
+  background-color: rgba(255, 255, 255, 0.753);
+  width: 25%;
+  height: 5vh;
+  
+  margin-left: 30%;
+  margin-top: 10%;
+  border-radius: 15px;
+  padding: 1%;
+
+}
+.button1 a{
+
+  color:black;
+  text-decoration: none;
+ 
 }
 
 

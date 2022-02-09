@@ -1,9 +1,11 @@
 .form{
     background-color: rgb(193, 230, 231);
     width:50%;
-    height:80%;
+    height:50vh;
     margin-left: 30%;
     padding: 30px;
+    padding-top: 70px;
+    
 }
 .form button{
     width: 20%;

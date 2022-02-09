@@ -11,19 +11,19 @@ const Home = () => {
         
       <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" /> */}
         <div className="quote-div">
-          <p>IGIRE MUHINZI<br/><br/>
+          <p>
           E-COMMERCE PLATFORM FOR BUYING AND SELLING OF AGRICULTURAL PRODUCTS
             <br/><br/>
-            <a href="/product" className="quote-button"> Buy Now</a>
+            <div className="button1">
+            <a href="/product" > Buy Now</a>
+            </div>
           </p>
         </div>
 
         
         {/* </div> */}
 
-        <div className="quote-div-image"  >
-          <img src="https://media.istockphoto.com/photos/african-woman-laughing-picture-id538889138?s=170667a" />
-        </div>
+        
       </div>
 
 
