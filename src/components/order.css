@@ -1,5 +1,28 @@
 .submit{
-    height: 20%;
-    width: 30%;
-    background-color: rgb(226, 213, 213);
+    background-image: url("https://static1.bigstockphoto.com/1/8/1/large1500/181475833.jpg");
+    height: 80vh;
+    width: 100%;
+}
+
+
+
+
+.submit1{
+   
+  color: cornsilk;
+    animation: moveleft 9s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
 }

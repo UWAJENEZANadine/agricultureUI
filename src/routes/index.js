@@ -9,6 +9,7 @@ import NewProductPost from "../views/dashboard/newProduct";
 import DashLayout from "../components/DashboadLayoutForSeller";
 import AllProduct from "../views/dashboard/allProducts";
 import AllOrder from "../views/dashboard/orders";
+import Submit from "../components/order";
 const isUserLogedIn = localStorage.getItem("userLogedIn");
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
         <Route path="/signin" element={<Signin />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/order" element={<Submit />} />
       </Routes>
 
       {isUserLogedIn && currentUrl.includes("/dash") ? (
@@ -33,6 +35,7 @@ const Index = () => {
             <Route path="/dash/newProduct" element={<NewProductPost />}></Route>
             <Route path="/dash/allProducts" element={<AllProduct />}></Route>
             <Route path="/dash/allorder" element={<AllOrder />}></Route>
+            
           </Routes>
         </DashLayout>
       ) : (

@@ -22,7 +22,7 @@ const ProductCard = ({ data }) => {
 
 
       
-    <Drawer  title="Well, we have just the solution for you, Free delivery" placement="top" visible={drawerVisible} width={70} height={300}  onClose={() =>closeDrawerVisible()}>
+    <Drawer  title="We've got precisely the thing for you, Delivery is completely free." placement="top" visible={drawerVisible} width={70} height={400}  onClose={() =>closeDrawerVisible()}>
 <SingleProduct data={data}/>
         </Drawer>
       

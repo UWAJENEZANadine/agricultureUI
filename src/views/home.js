@@ -11,15 +11,22 @@ const Home = () => {
         
      
         <div className="quote-div">
-          <p>IGIRE MUHINZI<br/><br/>
+          <p>
           E-COMMERCE PLATFORM FOR BUYING AND SELLING OF AGRICULTURAL PRODUCTS
             <br/><br/>
-            <a href="/product" className="quote-button"> Buy Now</a>
+            <div className="button1">
+            <a href="/product" > Buy Now</a>
+            </div>
           </p>
         </div>
 
         
         {/* </div> */}
+
+
+        
+
+
       </div>
 
 
