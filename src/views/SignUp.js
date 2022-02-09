@@ -27,7 +27,7 @@ const SignUp = () => {
       > */}
       <div className="form-background">
         <br /><br /><br /><br /><br /><br />
-       <div className="form-container">
+       <div className="form-container"><br/><br/>
         <h1>CREATE ACCOUNT</h1>
         <Form
           name="normal_register"
