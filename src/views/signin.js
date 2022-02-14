@@ -34,7 +34,7 @@ const Signin = () => {
         <h1>Log in here please!</h1>
         <Form name="normal_login" className="login-form"  initialValues={{remember: true,}} onFinish={onFinish} >
           <Form.Item
-            name="username"
+            name="email"
             rules={[
               {
                 required: true,
@@ -44,7 +44,7 @@ const Signin = () => {
           >
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
-              placeholder="Username"
+              placeholder="email"
             />
           </Form.Item>
           <Form.Item
@@ -59,7 +59,7 @@ const Signin = () => {
             <Input
               prefix={<LockOutlined className="site-form-item-icon" />}
               type="password"
-              placeholder="Password"
+              placeholder="password"
             />
           </Form.Item>
           <Form.Item>
@@ -70,7 +70,7 @@ const Signin = () => {
           <Button htmlType="submit" onClick={() => {}}>
             Login
           </Button>
-          Or <a href="./SignUp">register now!</a>
+          Or <a href="">register now!</a>
         </Form>
        
       </div>

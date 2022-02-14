@@ -1,62 +1,68 @@
-import React from "react";
-import { Space, Table } from "antd"
-import buyerInfo from "../../assets/constants/buyerInfo.json"
-
+import React, { useState, useEffect } from "react";
+import { Space, Table, Tag } from "antd";
+import buyerInfo from "../../assets/constants/buyerInfo.json";
+import agricultureProductApis from "../../services/agricultureProductApis";
 
 
 const column = [
-    {
-        title: 'First Name',
-        dataIndex: 'firstName',
-        key: 'firstName',
-    },
-    {
-        title: "Last Name",
-        dataIndex: "lastName",
-        key: "lastNamee",
-    },
-    {
-        title: "Email",
-        dataIndex: "email",
-        key: "email",
-    },
-   
+  {
+    title: "First Name",
+    dataIndex: "firstName",
+    key: "firstName",
+  },
+  {
+    title: "Last Name",
+    dataIndex: "lastName",
+    key: "lastName",
+    
+  },
+  {
+    title: "Email",
+    dataIndex: "email",
+    key: "email",
+  },
 
-    {
-        title: "Status",
-        dataIndex: "status",
-        key: "status",
-        
-    },
-   
+  // {
+  //   title: "Gender",
+  //   dataIndex: "gender",
+  //   key: "gender",
+    //  render:(record)=>(
+    //     <Tag color={record.gender === "male"? "greekblue" : "pink"}>
+    //        {record?.gender.toUpperCase()}
+    //        </Tag>
+    //  )
+  // },
 
-    {
+  {
         title: "Actions",
         key: " actions",
         fixed:"right",
         width: 100,
-        render:()=>(
+        render:(text, record)=>(
             <Space size="middle">
-                <a href="" style={{color:"green"}}>Accept </a>
-                <a href="" style={{color:"red"}}>Decline </a>
-          
+                <a href="#">view </a>
+                <a href="#">Edit </a>
+                <a href="#" style={{color:"red"}}>Delete </a>
             </Space>
         )
-    }
-   
+    },
 ];
 
-
-
 const AllOrder = () => {
+  const [allUsersData, setAllUsersData] = useState([]);
 
-    return (
-        <>
-        <Table className="bg-dark" columns={column}  dataSource={buyerInfo} />
-       </>
+  useEffect(() => {
+    agricultureProductApis.getAllUsers().then((res) => {
+      console.log(res);
+      setAllUsersData(res.data.data);
+    });
+  }, []);
 
-    )
+  return (
+    <>
+      <Table className="bg-dark" columns={column} dataSource={allUsersData} />
+    </>
+  );
+};
 
-}
-
-export default  AllOrder;
+export default AllOrder;
