@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { Space, Table } from "antd"
 import { EyeOutlined } from "@ant-design/icons";
 import { DeleteOutlined } from "@ant-design/icons";
 import { EditOutlined } from "@ant-design/icons";
-import allAvailableProducts from "../../assets/constants/product.json"
+// import allAvailableProducts from "../../assets/constants/product.json"
+import agricultureProductApis from "../../services/agricultureProductApis";
+
 
 
 
@@ -60,9 +62,19 @@ const columns = [
 
 const AllProduct = () => {
 
+    const [getAllProducts, setGetAllProducts] = useState([]);
+
+  useEffect(() => {
+    agricultureProductApis.getAllProducts().then((res) => {
+      console.log(res);
+      setGetAllProducts(res.data.data);
+    });
+  }, []);
+
+
     return (
         <>
-        <Table className="bg-dark"  columns={columns}  dataSource={allAvailableProducts}/>
+        <Table className="bg-dark"  columns={columns}  dataSource={getAllProducts}/>
        </>
 
     )
