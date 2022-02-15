@@ -141,7 +141,7 @@ const SignUp = () => {
             </Form.Item>
             <Form.Item name="role" rules={[{ required: true }]}>
               <Select placeholder="select your role">
-                <Option value="admin">admin</Option>
+                {/* <Option value="admin">admin</Option> */}
                 <Option value="buyer">buyer</Option>
                 <Option value="seller">seller</Option>
               </Select>

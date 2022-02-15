@@ -19,7 +19,8 @@
   }
   
   .site-layout .site-layout-background {
-    background: rgba(226, 242, 243, 0.781);
+    color: aliceblue;
+    /* background: rgba(226, 242, 243, 0.781); */
   }
 
   .dash-form{
