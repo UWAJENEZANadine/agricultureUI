@@ -23,7 +23,7 @@ const DashLayout = ({children}) => {
 
   return (
     <Layout>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider trigger={null} collapsible collapsed={collapsed} style={{minHeight:"100vh"}}>
         {/* <div className="logo" /> */}
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEC7KOCi__hsFKdu0R1GrjfjsEDFxHfagEw&usqp=CAU" style={{width:"60px", height:"60px", borderRadius:"30px", margin:"30px 10px 30px 15px"  }}/>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
@@ -57,7 +57,7 @@ const DashLayout = ({children}) => {
                 onClick: toggle,
             }
             
-          ) }<h1 style={{marginLeft:"50px", marginTop:"-50px"}}>ADMIN MANAGEMENT INFORMATION</h1>
+          ) }<h1 style={{marginLeft:"50px", marginTop:"-50px",color:"#fff"}}>ADMIN MANAGEMENT INFORMATION</h1>
           
         </Header>
         <Content
