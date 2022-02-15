@@ -16,36 +16,43 @@ const column = [
     key: "lastName",
     
   },
+  
   {
-    title: "Email",
-    dataIndex: "email",
-    key: "email",
+    title: "Gender",
+    
+    key: "gender",
+     render:(record)=>(
+        <Tag color={record.gender === "male"? "greekblue" : "pink"}>
+           {record?.gender.toUpperCase()}
+           </Tag>
+     )
   },
-
-  // {
-  //   title: "Gender",
-  //   dataIndex: "gender",
-  //   key: "gender",
-    //  render:(record)=>(
-    //     <Tag color={record.gender === "male"? "greekblue" : "pink"}>
-    //        {record?.gender.toUpperCase()}
-    //        </Tag>
-    //  )
-  // },
-
   {
-        title: "Actions",
-        key: " actions",
-        fixed:"right",
-        width: 100,
-        render:(text, record)=>(
-            <Space size="middle">
-                <a href="#">view </a>
-                <a href="#">Edit </a>
-                <a href="#" style={{color:"red"}}>Delete </a>
-            </Space>
-        )
-    },
+    title: "Product Name",
+    dataIndex: "ProductName",
+    key: "ProductName",
+  },
+  {
+    title: "Quantity",
+    dataIndex: "quantity",
+    key: "quantity",
+  },
+  {
+    title: "Actions",
+    key: " actions",
+    fixed:"right",
+    width: 100,
+    render:()=>(
+        <Space size="middle">
+            <a> accepted</a>
+            <a> Declined </a>
+            <a>canceled</a>
+        </Space>
+    )
+}
+  
+
+  
 ];
 
 const AllOrder = () => {
