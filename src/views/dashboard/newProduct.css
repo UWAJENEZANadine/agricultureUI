@@ -1,21 +1,7 @@
-.container-dash-img{
-    display: flex;
-    align-items: center;
-}
-.dash-image img{
-    width: 100%;
-    height: 85vh;
-    
 
-}
-.dash-image{
-    background-color: blue;
-    width: 40%;
-
-}
 .dash-form {
-    background-color: brown;
-    height: 85vh;
+    width: 80%;
+    height: 90vh;
 }
 .dash-form Form{
     background: whitesmoke;
