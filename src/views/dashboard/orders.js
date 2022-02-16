@@ -1,27 +1,28 @@
-import React,{ useState, useEffect }from "react";
-import { Space, Table } from "antd"
-// import buyerInfo from "../../assets/constants/buyerInfo.json"
+
+import React, { useState, useEffect } from "react";
+import { Space, Table, Tag } from "antd";
+import buyerInfo from "../../assets/constants/buyerInfo.json";
 import agricultureProductApis from "../../services/agricultureProductApis";
 
 
-
 const column = [
-    {
-        title: 'First Name',
-        dataIndex: 'firstName',
-        key: 'firstName',
-    },
-    {
-        title: "Last Name",
-        dataIndex: "lastName",
-        key: "lastNamee",
-    },
-    {
-        title: "Email",
-        dataIndex: "email",
-        key: "email",
-    },
-   
+  {
+    title: "First Name",
+    dataIndex: "firstName",
+    key: "firstName",
+  },
+  {
+    title: "Last Name",
+    dataIndex: "lastName",
+    key: "lastName",
+    
+  },
+  {
+    title: "Email",
+    dataIndex: "email",
+    key: "email",
+  },
+
 
     // {
     //     title: "Status",
@@ -31,11 +32,24 @@ const column = [
     // },
    
 
-    {
+  // {
+  //   title: "Gender",
+  //   dataIndex: "gender",
+  //   key: "gender",
+    //  render:(record)=>(
+    //     <Tag color={record.gender === "male"? "greekblue" : "pink"}>
+    //        {record?.gender.toUpperCase()}
+    //        </Tag>
+    //  )
+  // },
+
+
+  {
         title: "Actions",
         key: " actions",
         fixed:"right",
         width: 100,
+
         render:(text,record)=>(
             <Space size="middle">
                 <a href="#">view</a>
@@ -65,8 +79,7 @@ const AllOrder = () =>{
         <Table className="bg-dark" columns={column}  dataSource={allUsersData} />
        </>
 
-    )
+  );
+};
 
-}
-
-export default  AllOrder;
+export default AllOrder;

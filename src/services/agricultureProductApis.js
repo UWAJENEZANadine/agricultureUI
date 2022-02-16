@@ -1,27 +1,54 @@
-import responsiveObserve from "antd/lib/_util/responsiveObserve";
+
 import axios from "axios";
-const AGRICULTUREUI_URL = "http://localhost:5050";
+
+const AGRICULTURE_APIS_URL = "http://localhost:5050";
+
 var config = {
-    headers:{
-        "Content-Type":"appliction/json",
-
-    },
+  headers: {
+    "Content-Type": "application/json",
+  },
 };
-
-class Application{
-    async getAllUsers(){
-        try{
-            const response = await axios.get(
-
-                AGRICULTUREUI_URL+"/user/all",
-                config
-            );
-            return response; }
-            catch(error){
-                console.log(error);
-            }
+class Application {
+  async createAccount(data) {
+    try {
+      const response = await axios.post(
+        AGRICULTURE_APIS_URL + "/user/register",
+        data,
+        config
+      );
+      return response;
+    } catch (error) {
+      console.log(error);
     }
-   
+  }
+  async getAllUsers() {
+    try {
+      const response = await axios.get(
+        AGRICULTURE_APIS_URL + "/user/all",
+        config
+      );
+
+      return response;
+    } catch (error) {
+      console.log(error);
     }
-    
+  }
+
+  async getAllProducts() {
+    try {
+      const response = await axios.get(
+        AGRICULTURE_APIS_URL + "/products/all",
+        config
+      );
+
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+ 
+}
+
+
+
 export default new Application();

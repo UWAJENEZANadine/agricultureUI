@@ -19,7 +19,7 @@
         /* margin-left: 120px; */
         /* animation:animation 30s infinite  ;
       }
-        @keyframes animation { */ */
+        @keyframes animation { */ 
         /* 40%{
                 background:url(https://thumbs.dreamstime.com/b/african-farmer-man-standing-organic-farm-wearing-native-clothes-agriculture-cultivation-concept-192460086.jpg)
               } */
@@ -75,28 +75,6 @@ width: 100%;
 }
 
 
-.quote-button{
-  margin-left: 200px;
-
-  border-radius: 15px;
-  padding: 5px;
-  border: 2px solid rgba(21, 37, 37, 0.842);
-  box-shadow: 2px 2px 2px 3.5px  rgba(21, 37, 37, 0.842);
-  background-color: rgb(252, 243, 252);
-  text-decoration: none;
-  font-family: Trebuchet ;
-  color: black;
-  font-weight: 800;
-  
-}
-
-
-.quote-div-image img{
-  width: 95%;
-  height: 70vh;
-  margin-top: 50px;
-  margin-left: 50px;
-}
 
 
 

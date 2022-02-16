@@ -1,18 +1,18 @@
-.form-background {
+.signUp-page{
   background-image: url(https://cdn.pixabay.com/photo/2021/09/17/12/12/coffee-6632524_960_720.jpg);
   height: 150vh;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
-.form-container{
+.signUp-container{
   background-color:whitesmoke ;
-  height:93vh;
-  width: 40%;
+  height:120vh;
+  width: 45%;
   margin-left: 25%;
- 
   padding: 10px;
   border-radius: 70px;
- 
+
 }
 
 h1 {
@@ -20,19 +20,16 @@ h1 {
   font-weight: 700;
   margin-top: 28px;
 }
-.login-form-button {
+.register-form-button {
   width: 150px;
 }
 
 .register-form{
     width: 73%;
-    /* min-height: 92vh; */
      margin-left: 80px ;
-     margin-top: 80px; 
+     /* margin-top: 80px;  */
      
     
 }
-.login-form-button a{
-  text-decoration: none;
-}
+
 
