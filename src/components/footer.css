@@ -40,6 +40,9 @@
 .col2 ul li{
     list-style-type: none;
 }
+ul li{
+    display: flex;
+}
 .copyright{
     margin-left: 550px;
     text-decoration: none;

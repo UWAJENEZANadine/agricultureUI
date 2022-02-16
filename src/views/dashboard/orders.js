@@ -22,27 +22,25 @@ const column = [
     key: "email",
   },
 
-  // {
-  //   title: "Gender",
-  //   dataIndex: "gender",
-  //   key: "gender",
-    //  render:(record)=>(
-    //     <Tag color={record.gender === "male"? "greekblue" : "pink"}>
-    //        {record?.gender.toUpperCase()}
-    //        </Tag>
-    //  )
-  // },
+  {
+    title: "Product Name",
+    dataIndex: "ProductName",
+    key: "ProductName",
+  },
+
+
+ 
 
   {
-        title: "Actions",
+        title: "status",
         key: " actions",
         fixed:"right",
         width: 100,
         render:(text, record)=>(
             <Space size="middle">
-                <a href="#">view </a>
-                <a href="#">Edit </a>
-                <a href="#" style={{color:"red"}}>Delete </a>
+                <a href="#">accepted </a>
+                <a href="#" style={{color:"green"}}>declined </a>
+                <a href="#" style={{color:"red"}}>canceled </a>
             </Space>
         )
     },
