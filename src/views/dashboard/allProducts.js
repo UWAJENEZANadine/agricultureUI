@@ -1,17 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { Space, Table, Skeleton } from "antd";
+import { Space, Table, Skeleton ,notification} from "antd";
 import { EyeOutlined } from "@ant-design/icons";
 import { DeleteOutlined } from "@ant-design/icons";
 import { EditOutlined } from "@ant-design/icons";
 // import allAvailableProducts from "../../assets/constants/product.json"
 import agricultureProductApis from "../../services/agricultureProductApis";
+import { Spin} from 'antd';
 
 import { Popconfirm, message } from "antd";
 
 function confirm(e) {
   console.log(e);
+  agricultureProductApis.deleteProduct(e._id).then((res)=>{
+    if (!res) {
+      return notification.error({ message: "server is down" });
+    }
+    if (res.status === 200) {
+      
   message.success("product deleted");
+  window.location.reload()
+    } else {
+      return notification.error({
+        message: !res.data.error ? res.data.message : res.data.error,
+      });
+    }
+  });
 }
+
 
 function cancel(e) {
   console.log(e);
@@ -55,7 +70,7 @@ const columns = [
     key: " actions",
     fixed: "right",
     width: 100,
-    render: () => (
+    render: (record) => (
       <Space size="middle">
         <a>
           {" "}
@@ -64,12 +79,12 @@ const columns = [
         <a href="">
           <Popconfirm
             title="Are you sure to delete this product?"
-            onConfirm={confirm}
+            onConfirm={()=>confirm(record)}
             onCancel={cancel}
             okText="Yes"
             cancelText="No"
           >
-            <a href="#" ><DeleteOutlined /></a>
+            <a href="#"  style={{color:"red"}}><DeleteOutlined /></a>
           </Popconfirm>
 
         </a>
@@ -94,12 +109,18 @@ const AllProduct = () => {
 
   return (
     <>
-      <h1>All products:</h1>
       {getAllProducts.length == 0 ? (
-        <Skeleton active></Skeleton>
+       <div style={{marginLeft:"50%", paddingTop:"10%"}}>
+         <Space size="middle" >
+           <Spin size="small" />
+           <Spin />
+           <Spin size="large" />
+         </Space>
+         </div>
+         
       ) : (
         <Table
-          className="bg-dark"
+          // className="bg-dark"
           columns={columns}
           dataSource={getAllProducts}
         />

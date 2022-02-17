@@ -10,6 +10,9 @@ import {
 import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const onFinish = (values) => {
+
+
+    
     console.log(values)
     localStorage.setItem("userLogedIn", true);
     navigate("/dash");
@@ -17,8 +20,6 @@ const Signin = () => {
   const navigate = useNavigate();
 
   const [visible, setVisible] = useState(true);
-
-  
 
   return (
     <HomeLayout>
