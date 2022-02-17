@@ -25,7 +25,7 @@ class Application {
   async getAllUsers() {
     try {
       const response = await axios.get(
-        AGRICULTURE_APIS_URL + "/user/all",
+        AGRICULTURE_APIS_URL + "/order/all/product/:id",
         config
       );
 
@@ -34,6 +34,7 @@ class Application {
       console.log(error);
     }
   }
+
 
   async getAllProducts() {
     try {
@@ -46,6 +47,20 @@ class Application {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  async deleteProduct(){
+    try{
+      const response = await axios.delete(
+        AGRICULTURE_APIS_URL + "/products/:id",
+        config
+      );
+      return response;
+    }catch(error){
+      console.log(error)
+    }
+
+
   }
  
 }

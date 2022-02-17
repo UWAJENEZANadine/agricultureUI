@@ -12,7 +12,7 @@ const Signin = () => {
   const onFinish = (values) => {
     console.log(values)
     localStorage.setItem("userLogedIn", true);
-    navigate("/dash/newProduct");
+    navigate("/dash");
   };
   const navigate = useNavigate();
 
@@ -67,10 +67,10 @@ const Signin = () => {
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
           </Form.Item>
-          <Button htmlType="submit" onClick={() => {}}>
+          <Button htmlType="submit"  className="button2" onClick={() => {}}>
             Login
           </Button>
-          Or <a href="">register now!</a>
+          Or <a href="/SignUp">register now!</a>
         </Form>
        
       </div>

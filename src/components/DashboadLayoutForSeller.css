@@ -5,6 +5,8 @@
     line-height: 64px;
     cursor: pointer;
     transition: color 0.3s;
+    color: white;
+    margin-top: 5px;
     
   }
   
@@ -18,20 +20,39 @@
 
   }
   
-  .site-layout .site-layout-background {
-    color: aliceblue;
-    /* background: rgba(226, 242, 243, 0.781); */
-  }
-
-  .dash-form{
-    width: 50%;
-   
-   
-  }
   Table{
     font-weight: 700;
     font-size: medium;
 
+  }
+
+  .navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 65px;
+    margin-top: -60px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .title{
+    width: 50%;
+    color: white;
+    padding: 5px;
+  }
+  .title h2{
+    color: white;
+  }
+  .container{
+    width: 50%;
+    height: 20vh;
+    
+  }
+  .container Input{
+    background-color: black;
+    border: none;
+    color: white;
+    height: 8vh;
   }
 
   
