@@ -17,17 +17,17 @@ const Footer = () => {
     <div className="bg-dark footer-container">
       <div className="col1">
         <h2>Our services</h2>
-        <CloudUploadOutlined style={{fontSize: '2em'}} /><a href="">Posting a product</a><br/><br/>
-        <BellOutlined style={{fontSize: '2em'}} /><a href="">Ordering a Product</a>
+        <a href=""><CloudUploadOutlined style={{fontSize: '1em'}} />Posting a product</a><br/><br/>
+        <a href=""><BellOutlined style={{fontSize: '1em'}} />Ordering a Product</a>
       </div>
       <div className="col2">
         <h2>Contact Us</h2>
         <ul>
           <li>
-          <InboxOutlined /><a href="">softwarechasers62@gmail.com</a><br/><br/>
+          <a href=""> <InboxOutlined />softwarechasers62@gmail.com</a><br/><br/>
           </li>
           <li>
-          <PhoneOutlined /><a href="">+250786774605</a>
+          <a href=""><PhoneOutlined />+250786774605</a>
           </li>
         </ul>
       </div>

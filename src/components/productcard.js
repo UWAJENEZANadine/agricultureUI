@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Drawer } from "antd";
+import { Drawer, Space } from "antd";
 import "antd/dist/antd.css";
 import "./productCard.css";
 import SingleProduct from "./singleproduct";
@@ -32,14 +32,15 @@ const ProductCard = ({ data }) => {
       </div>
       <div className="other" >
           <h1>{data.title}</h1>
-          <p>description{data.description}<br/><br/>
-          available_quantity{data.available_quantity}<br/>
-          posted_date{data.posted_date}<br/>
-          expired_date{data.expired_date}<br/>
-          price{data.price}<br/>
-          seller_name{data.seller_name}<br/>
-          seller_phone{data.seller_phone}
-          </p>
+          <p> {data.description}<br/><br/>
+         
+          <Space> <label> Available Quantity: </label> {data.available_quantity}<br/> </Space><br/>
+          <Space> <label> Posted On: </label> {data.posted_date}<br/> </Space><br/>
+          <Space> <label> Expire Date: </label> {data.expired_date}<br/> </Space><br/>
+          <Space> <label> Price: </label> {data.price}<br/> </Space><br/>
+          <Space> <label> Seller Names: </label> {data.seller_name}<br/> </Space><br/>
+          <Space> <label> Seller Phone: </label> {data.seller_phone}<br/> </Space><br/>
+         </p>
           <div className="read" onClick={() => handleclickDrawerVisible()}>
           <label onClick={() => handleclickDrawerVisible()}> Order Now</label>
           </div>

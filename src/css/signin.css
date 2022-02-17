@@ -1,12 +1,12 @@
 
   .signin-container h1{
      text-align: center;
-     font-weight: 900;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 400;
+     font-family: sans-serif;
 
   }
   .register-model-form{
-    margin-top: 100px;
+    margin-top: 170px;
    
   }
   .signUp-page{

@@ -50,6 +50,7 @@ const columns = [
             <Space size="middle">
                 <a> <EyeOutlined/> </a>
                 <a> <DeleteOutlined/> </a>
+                
                 <a href=""><EditOutlined/> </a>
             </Space>
         )

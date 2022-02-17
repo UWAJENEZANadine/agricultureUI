@@ -1,7 +1,8 @@
 
 import axios from "axios";
 
-const AGRICULTURE_APIS_URL = "http://localhost:5050";
+// const AGRICULTURE_APIS_URL = "http://localhost:5050";
+const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
 
 var config = {
   headers: {
@@ -52,3 +53,4 @@ class Application {
 
 
 export default new Application();
+

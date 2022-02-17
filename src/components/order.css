@@ -13,6 +13,7 @@
     animation: moveleft 9s;
     visibility: hidden;
     animation-fill-mode: forwards;
+    padding: 100px;
     
 
 }
