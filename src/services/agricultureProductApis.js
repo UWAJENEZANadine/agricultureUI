@@ -22,6 +22,19 @@ class Application {
       console.log(error);
     }
   }
+  
+    async log(data) {
+      try {
+        const response = await axios.post(
+          AGRICULTURE_APIS_URL + "/user/login",
+          data,
+          config
+        );
+        return response;
+      } catch (error) {
+        console.log(error);
+      }
+    }
   async getAllUsers() {
     try {
       const response = await axios.get(
