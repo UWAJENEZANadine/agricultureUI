@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import HomeLayout from "../components/homeLayout";
 import "antd/dist/antd.css";
 import "../css/signin.css";
-import { Form, Input, Button, Checkbox, Modal } from "antd";
+import agricultureProductApis from "../services/agricultureProductApis";
+import { Form, Input, Button, Checkbox, Modal, notification } from "antd";
 import {
   UserOutlined,
   LockOutlined,
@@ -11,8 +12,27 @@ import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const onFinish = (values) => {
     console.log(values)
+    agricultureProductApis.signinAccount(values).then((res)=>{
+      if(!res){
+        return notification.error({
+          message:"Server is down",
+        });
+      }
+      if(res.status===200){
+        console.log(res.data.data);
+        if(res.data.data.role==="admin"){
+          localStorage.setItem("userLogedIn", true);
+          navigate("/dash/admin");
+        }
+        else if(res.data.data.role==="seller"){
+
     localStorage.setItem("userLogedIn", true);
-    navigate("/dash/newProduct");
+     navigate("/dash/newProduct");
+        }
+      }
+    }
+    )
+
   };
   const navigate = useNavigate();
 
