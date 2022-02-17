@@ -30,7 +30,7 @@ const NewProductPost = () => {
   
         <div className="dash-form">
           <Form onFinish={onFinish} className="dash-form">
-            <h1 style={{height:"70px"}} >Post your product y filling this form</h1>
+            <h1 style={{height:"70px"}} >Post your product by filling this form</h1>
             <Form.Item name="title" rules={[{ required: true }]}>
               <Input placeholder="type Productname" />
             </Form.Item>
@@ -48,7 +48,7 @@ const NewProductPost = () => {
               rules={[{ required: true }]}
             >
               <Upload name="logo" action="/upload.do" listType="picture">
-                <Button icon={<UploadOutlined />} style={{width:"500px"}} >Click to upload</Button>
+                <Button icon={<UploadOutlined />} style={{width:"815px"}} >Click to upload</Button>
               </Upload>
             </Form.Item>
 

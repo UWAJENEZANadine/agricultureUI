@@ -1,15 +1,21 @@
 
 import axios from "axios";
+import store from "store"
 
-// const AGRICULTURE_APIS_URL = "http://localhost:5050";
+
+//const AGRICULTURE_APIS_URL = "http://localhost:5050";
 const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
 
 var config = {
   headers: {
     "Content-Type": "application/json",
+    "x-auth-token": `${store.get("x-auth-token")}`,
   },
 };
+
 class Application {
+
+
   async createAccount(data) {
     try {
       const response = await axios.post(
@@ -22,19 +28,6 @@ class Application {
       console.log(error);
     }
   }
-  
-    async log(data) {
-      try {
-        const response = await axios.post(
-          AGRICULTURE_APIS_URL + "/user/login",
-          data,
-          config
-        );
-        return response;
-      } catch (error) {
-        console.log(error);
-      }
-    }
   async getAllUsers() {
     try {
       const response = await axios.get(
@@ -56,18 +49,21 @@ class Application {
         config
       );
 
+
       return response;
     } catch (error) {
       console.log(error);
     }
   };
 
-  async deleteProduct(){
+  async deleteProduct(id){
+  
     try{
       const response = await axios.delete(
-        AGRICULTURE_APIS_URL + "/products/:id",
+        AGRICULTURE_APIS_URL + "/products/"+id,
         config
       );
+      
       return response;
     }catch(error){
       console.log(error)
@@ -77,7 +73,6 @@ class Application {
   }
  
 }
-
 
 
 export default new Application();

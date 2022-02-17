@@ -104,10 +104,11 @@ const DashLayout = ({ children }) => {
               <Input
                 prefix={<SearchOutlined style={{color:"white"}}  />}
                 placeholder="search here...."
-             style={{width:"60%", marginLeft:"100px", backgroundColor:"black", borderRadius:"30px" }} />
+             style={{width:"40%", marginLeft:"150px", backgroundColor:"black", borderRadius:"30px" }} />
              <BellOutlined style={{fontSize:"2em", marginLeft:"10px", color:"white"}}/>
             </div>
           </div>
+
         </Header>
         <Content
           className="site-layout-background"
