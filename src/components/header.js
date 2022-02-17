@@ -22,7 +22,9 @@ const Header = () => {
               <a href="AboutUs">About Us</a>
               <a href="product">Products</a>
             </div>
+            
           </div>
+          <hr></hr>
         </div>
       </div>
     </>

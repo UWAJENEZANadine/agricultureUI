@@ -40,14 +40,14 @@
             background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmu1Xay-8tSniMRxmm83zkR2j0q9hs_HU3lbgDmXEssW-j6SfvKGx6Q8CxontrGAxNnQ&usqp=CAU)}
 } */
 
-.description {
+/* .description {
   height: 120vh;
   width: 100%;
   background-color: rgb(226, 247, 248);
   text-align: center;
-  color: rgb(1, 1, 17);
+  color: rgb(1, 1, 17); */
   /* margin-left: 40%; */
-}
+/* } */
 .images-slide {
   height: 70vh;
   margin-left: 340px;
@@ -59,18 +59,30 @@
   width: 100%;
   height: 80vh;
   color: white;
-  justify-content: space-between;
-  display: flex;
+  /* justify-content: space-between; */
+  /* display: flex; */
   /* justify-content: space-between; */
 
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 20px;
+  padding: 100px;
+}
+.quote-div-container h1{
+  color: whitesmoke;
+  font-weight: 400
+  ;
+ 
+
 }
 .quote-div{
   width: 100%;
+  align-items: center;
 }
 .quote-div p{
-  margin-left: 30%;
+  
+  text-align: center;
+  font-size: larger;
+  
   
 }
 
@@ -96,17 +108,20 @@
 }
 .button1 {
   background-color: rgba(255, 255, 255, 0.753);
-  width: 15%;
+  width: 160px;
   height: 8vh;
   cursor: pointer;
   text-align: center;
-  margin-left: 30%;
-  margin-top: 10%;
+  
+  
+  margin-top: 10px;
+  font-size: larger;
   border-radius: 15px;
-  padding: 1%;
+  margin-left: 45%;
+  padding: 20px;
 }
 .button1:hover {
-  background-color: rgba(255, 255, 255, 0.596);
+  background-color: rgba(105, 104, 104, 0.808);
  
 }
 .button1 a {

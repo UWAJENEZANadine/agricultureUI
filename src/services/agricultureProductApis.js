@@ -1,3 +1,4 @@
+
 import axios from "axios";
 
 // const AGRICULTURE_APIS_URL = "http://localhost:5050";
@@ -67,3 +68,4 @@ class Application {
 
 
 export default new Application();
+

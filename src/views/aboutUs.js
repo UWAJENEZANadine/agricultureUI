@@ -3,8 +3,8 @@ import HomeLayout from "../components/homeLayout";
 import "../css/aboutUs.css";
 import {
   DribbbleSquareOutlined,
-  FieldBinaryOutlined,
-  FieldNumberOutlined,
+  ShopOutlined ,
+  StarOutlined ,
 } from "@ant-design/icons";
 
 const AboutUs = () => {
@@ -12,6 +12,7 @@ const AboutUs = () => {
     <HomeLayout>
       <div className="aboutUs-container">
         <h1>ABOUT US</h1>{" "}
+        <p>We bridge the gap by offering the quality products at an affordable price</p>
       </div>
       <div className="about-header">
         {" "}
@@ -20,37 +21,39 @@ const AboutUs = () => {
 
       <div className="container ">
         <div className="row justify-content-around about1-container">
-          <div className=" col-10 col-sm-6 col-md-4 mb-4 bout-col1">
-            <FieldBinaryOutlined
+          <div className=" col-10 col-sm-5 col-md-4 mb-3 bout-col1" style={{padding:"10px"}}>
+            <ShopOutlined 
               className="antdd-style"
               style={{ fontSize: "3em" }}
             />
             <p>
+              <h1>Our services</h1><br/>
               We are innovators in agricultural business. We can call ourselves
               the innovators in agricultural business. And these are not just
               words. You can find real proof reading more about our company.
             </p>
           </div>
 
-          <div className=" col-10 col-sm-5 col-md-3 mb-4 about-col2">
-            <FieldNumberOutlined
+          <div className=" col-10 col-sm-5 col-md-4 mb-3 about-col2">
+            <StarOutlined 
               className="antdd-style"
               style={{ fontSize: "3em" }}
             />
-            <p>
+            <p><h1>Our Values</h1><br/>
               Providing quality agricultural products. We supply quality fruit
               and vegetables to different countries all over the world. Our
-              crops are carefully gathered and stored to get to our customers
+              crops are carefully gathered to get to our customers
               fresh.
             </p>
           </div>
 
-          <div className=" col-10 col-sm-6 col-md-4 mb-4 mr-4 about-col3">
+          <div className=" col-10 col-sm-5 col-md-4 mb-3  about-col3">
             <DribbbleSquareOutlined
               className="antdd-style"
               style={{ fontSize: "3em" }}
             />
             <p>
+              <h1>Our Mission</h1><br/>
               Even greater things are coming. We continue to develop our
               capacities. Even more fruits and vegetables will be grown and
               gathered in the nearest future. The total number of our livestock

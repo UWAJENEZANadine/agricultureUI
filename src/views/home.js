@@ -7,9 +7,10 @@ const Home = () => {
   return (
     <HomeLayout>
       <div className="quote-div-container">
+        <h1>IGIRE MUHINZI</h1>
         <div className="quote-div">
-          <p>
-            E-COMMERCE PLATFORM FOR BUYING AND SELLING OF AGRICULTURAL PRODUCTS
+        <p> E-commerce platform for buying and selling of agriculture products, <br/>
+            we bridge the gap buy offering quality products at an affordable price.
             <br />
             <br />
             <div className="button1">
@@ -21,7 +22,7 @@ const Home = () => {
         {/* </div> */}
       </div>
 
-      <h1 style={{ color: "rgb(131, 76, 5)" }}>BUY OUR CURRENT PRODUCT</h1>
+      <h1 style={{ color: "rgb(138, 74, 10)" }}>BUY OUR CURRENT PRODUCT</h1>
 
       <Carousel
         variant="dark"

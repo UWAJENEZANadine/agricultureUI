@@ -1,28 +1,30 @@
 .signUp-page{
   background-image: url(https://cdn.pixabay.com/photo/2021/09/17/12/12/coffee-6632524_960_720.jpg);
-  height: 150vh;
+  height: 115vh;
   background-repeat: no-repeat;
   background-size: cover;
   
 }
 .signUp-container{
+  
   background-color:whitesmoke ;
   height:120vh;
   width: 45%;
   margin-left: 25%;
-  padding: 150px 50px;
-  border-radius: 70px;
+  padding: 100px 50px;
+  border-radius: 100px;
 
 }
 
 h1 {
   text-align: center;
   font-weight: 700;
-  margin-top: 28px;
+  /* margin-top: 28px; */
 }
 
 .register-form{
     width: 73%;
+
      margin-left: 80px ;
      /* margin-top: 80px;  */
      
