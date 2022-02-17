@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Space, Table, Tag, Spin } from "antd";
 import agricultureProductApis from "../../services/agricultureProductApis";
@@ -21,6 +22,26 @@ const column = [
     key: "email",
   },
 
+
+    // {
+    //     title: "Status",
+    //     dataIndex: "status",
+    //     key: "status",
+        
+    // },
+   
+
+  // {
+  //   title: "Gender",
+  //   dataIndex: "gender",
+  //   key: "gender",
+    //  render:(record)=>(
+    //     <Tag color={record.gender === "male"? "greekblue" : "pink"}>
+    //        {record?.gender.toUpperCase()}
+    //        </Tag>
+    //  )
+  // },
+
   {
     title: "Product Name",
     dataIndex: "ProductName",
@@ -30,32 +51,40 @@ const column = [
 
  
 
+
+
   {
         title: "status",
         key: " actions",
         fixed:"right",
         width: 100,
-        render:(text, record)=>(
+
+        render:(text,record)=>(
             <Space size="middle">
+
+                <a href="#">view</a>
+                <a href="#" >edit</a>
+                <a href="#"style={{color:"red"}}>delete</a>
                 <a href="#">accepted </a>
                 <a href="#" style={{color:"green"}}>declined </a>
                 <a href="#" style={{color:"red"}}>canceled </a>
+
             </Space>
         )
-    },
+    }
+
 ];
 
-const AllOrder = () => {
-  const [allUsersData, setAllUsersData] = useState([]);
 
-  useEffect(() => {
-    agricultureProductApis.getAllUsers().then((res) => {
-      console.log(res);
-      setAllUsersData(res.data.data);
-    });
-  }, []);
+const AllOrder = () =>{
+    const[allUsersData,setAllUsersData]=useState([]);
+    useEffect(()=>{agricultureProductApis.getAllUsers().then((res)=>{
+        console.log(res);
+        setAllUsersData(res.data.data);
+    })},[]);
 
-  return (
+
+    return (
     <>
      {allUsersData.length == 0 ? (
        <div style={{marginLeft:"50%", paddingTop:"10%"}}>
@@ -71,6 +100,9 @@ const AllOrder = () => {
       <Table className="bg-dark" columns={column} dataSource={allUsersData} />
       )}
     </>
+  
+  
+
   )
 };
 
