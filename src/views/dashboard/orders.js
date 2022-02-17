@@ -16,31 +16,19 @@ const column = [
     key: "lastName",
     
   },
+  
   {
     title: "Email",
     dataIndex: "email",
     key: "email",
   },
+  {
+    title: "Product Name",
+    dataIndex: "ProductName",
+    key: "ProductName",
+  },
+ 
 
-
-    // {
-    //     title: "Status",
-    //     dataIndex: "status",
-    //     key: "status",
-        
-    // },
-   
-
-  // {
-  //   title: "Gender",
-  //   dataIndex: "gender",
-  //   key: "gender",
-    //  render:(record)=>(
-    //     <Tag color={record.gender === "male"? "greekblue" : "pink"}>
-    //        {record?.gender.toUpperCase()}
-    //        </Tag>
-    //  )
-  // },
 
   {
     title: "Product Name",
@@ -61,10 +49,6 @@ const column = [
 
         render:(text,record)=>(
             <Space size="middle">
-
-                <a href="#">view</a>
-                <a href="#" >edit</a>
-                <a href="#"style={{color:"red"}}>delete</a>
                 <a href="#">accepted </a>
                 <a href="#" style={{color:"green"}}>declined </a>
                 <a href="#" style={{color:"red"}}>canceled </a>
@@ -72,6 +56,7 @@ const column = [
             </Space>
         )
     }
+
 
 ];
 

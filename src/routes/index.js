@@ -5,8 +5,10 @@ import ProductView from "../views/product";
 import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
 import SignUp from "../views/SignUp";
+
 import NewProductPost from "../views/dashboard/newProduct";
 import DashLayout from "../components/DashboadLayoutForSeller";
+import Dashbord from "../components/DashboardForAdmin";
 import AllProduct from "../views/dashboard/allProducts";
 import AllOrder from "../views/dashboard/orders";
 import Submit from "../components/order";
@@ -28,6 +30,8 @@ const Index = () => {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/order" element={<Submit />} />
+        <Route path="/dash/admin" element={<Dashbord />}/>
+   
       </Routes>
 
       {isUserLogedIn && currentUrl.includes("/dash") ? (
