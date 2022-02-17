@@ -11,6 +11,9 @@ import {
 import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const onFinish = (values) => {
+
+
+    
     console.log(values)
     agricultureProductApis.signinAccount(values).then((res)=>{
       if(!res){
@@ -27,7 +30,8 @@ const Signin = () => {
         else if(res.data.data.role==="seller"){
 
     localStorage.setItem("userLogedIn", true);
-     navigate("/dash/newProduct");
+
+    navigate("/dash");
         }
       }
     }
@@ -37,8 +41,6 @@ const Signin = () => {
   const navigate = useNavigate();
 
   const [visible, setVisible] = useState(true);
-
-  
 
   return (
     <HomeLayout>
@@ -87,10 +89,10 @@ const Signin = () => {
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
           </Form.Item>
-          <Button htmlType="submit" onClick={() => {}}>
+          <Button htmlType="submit"  className="button2" onClick={() => {}}>
             Login
           </Button>
-          Or <a href="">register now!</a>
+          Or <a href="/SignUp">register now!</a>
         </Form>
        
       </div>
