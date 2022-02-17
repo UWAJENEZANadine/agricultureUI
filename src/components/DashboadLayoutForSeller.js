@@ -82,7 +82,7 @@ const DashLayout = ({ children }) => {
           style={{
             padding: 0,
             height: "25vh",
-            // backgroundColor: "BlackPearl",
+            backgroundColor: "rgb(75, 39, 3)",
           }}
         >
           {React.createElement(
