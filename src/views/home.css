@@ -3,7 +3,8 @@
     padding:50px;
 }
 .productCoverDiv{
-    background:rgba(0, 0, 0, 0.473);
+    /* background:rgba(0, 0, 0, 0.473); */
     /* padding:10px; */
-    width: 10%;
+    /* width: 10%; */
+    height: 100%;
 }

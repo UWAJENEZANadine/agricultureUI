@@ -10,8 +10,11 @@ import {
 const AboutUs = () => {
   return (
     <HomeLayout>
+      <div className="aboutus-page">
       <div className="aboutUs-container">
         <h1>ABOUT US</h1>{" "}
+        <br/>
+           
         <p>We bridge the gap by offering the quality products at an affordable price</p>
       </div>
       <div className="about-header">
@@ -21,7 +24,7 @@ const AboutUs = () => {
 
       <div className="container ">
         <div className="row justify-content-around about1-container">
-          <div className=" col-10 col-sm-5 col-md-4 mb-3 bout-col1" style={{padding:"10px"}}>
+          <div className=" col-10 col-sm-5 col-md-4 mb-3 bout-col1">
             <ShopOutlined 
               className="antdd-style"
               style={{ fontSize: "3em" }}
@@ -47,7 +50,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className=" col-10 col-sm-5 col-md-4 mb-3  about-col3">
+          <div className=" col-10 col-sm-5 col-md-4 mb-3 mr-3  about-col3">
             <DribbbleSquareOutlined
               className="antdd-style"
               style={{ fontSize: "3em" }}
@@ -61,9 +64,9 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-      </div>
+      
       <div className="container location-container">
-        <hr className="horizontal-line"></hr>
+        
         {/* <div className="location-container">
         {/* <div className="locationi-container">
           {/* <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2211912418301160-fx1.jpg"  style={{ width:"450px", height:"390px"}}/> */}
@@ -79,6 +82,8 @@ const AboutUs = () => {
             loading: "lazy",
           }}
         ></iframe>
+      </div>
+      </div>
       </div>
     </HomeLayout>
   );

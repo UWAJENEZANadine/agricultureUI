@@ -53,7 +53,7 @@
   margin-left: 340px;
 }
 .quote-div-container {
-  background-image: url("https://media.istockphoto.com/videos/macro-shot-dark-coffee-bean-with-smoke-video-id1239835800?s=640x640");
+  background-image: url("https://coffeezoid.com/imgs/uploads/best-robusta-coffee.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -65,11 +65,12 @@
 
   /* align-items: center; */
   margin-bottom: 20px;
-  padding: 100px;
+  padding: 80px;
 }
 .quote-div-container h1{
   color: whitesmoke;
-  font-weight: 400
+  font-weight: 650
+  ;font-family: sans-serif
   ;
  
 
@@ -91,9 +92,11 @@
   margin-top: 30px;
 }
 .caption-images h5 {
-  color: white;
-  margin-top: -250px;
-  font-weight: 900;
+  color:whitesmoke;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: -200px;
+  font-weight: 600;
   font-size: 60px;
   padding: 30px;
   margin-left: 20px;
