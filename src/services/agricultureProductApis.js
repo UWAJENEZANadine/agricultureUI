@@ -30,6 +30,19 @@ class Application {
       console.log(error);
     }
   }
+  async createOrders(data) {
+    try {
+      const response = await axios.post(
+        AGRICULTURE_APIS_URL + "/order/register",
+        data,
+        config
+      );
+      store.set("x-auth-token",response.data.token)
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
   async signinAccount(data) {
     try {
       const response = await axios.post(

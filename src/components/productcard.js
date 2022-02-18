@@ -22,7 +22,7 @@ const ProductCard = ({ data }) => {
 
 
       
-    <Drawer  title="We've got precisely the thing for you, Delivery is completely free." placement="top" visible={drawerVisible} width={70} height={400}  onClose={() =>closeDrawerVisible()}>
+    <Drawer  title="We've got precisely the thing for you, Delivery is completely free." placement="left" visible={drawerVisible} width={600} height={300}  onClose={() =>closeDrawerVisible()}>
 <SingleProduct data={data}/>
         </Drawer>
       
@@ -41,8 +41,8 @@ const ProductCard = ({ data }) => {
           <Space> <label> Seller Names: </label> {data.seller_name}<br/> </Space><br/>
           <Space> <label> Seller Phone: </label> {data.seller_phone}<br/> </Space><br/>
          </p>
-          <div className="read" onClick={() => handleclickDrawerVisible()}>
-          <label onClick={() => handleclickDrawerVisible()}> Order Now</label>
+          <div className="read" >
+          <a href="/signin"> <button>Order Now</button></a>
           </div>
           </div>
 

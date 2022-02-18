@@ -1,11 +1,16 @@
 .submit{
-    background-image: url("https://static1.bigstockphoto.com/1/8/1/large1500/181475833.jpg");
+   background-image: url("https://media.istockphoto.com/videos/macro-shot-dark-coffee-bean-with-smoke-video-id1239835800?s=640x640");
     height: 80vh;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
-
+.submit1 h1{
+    color: cornsilk;
+}
 
 .submit1{
    
@@ -13,7 +18,7 @@
     animation: moveleft 9s;
     visibility: hidden;
     animation-fill-mode: forwards;
-    padding: 100px;
+    padding: 10px;
     
 
 }
