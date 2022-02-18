@@ -32,9 +32,15 @@ const Signin = () => {
     localStorage.setItem("userLogedIn", true);
 
     navigate("/dash");
-        }
+        } 
+        
+          
+              
       }
+
+      
     }
+
     )
 
   };
@@ -90,7 +96,7 @@ const Signin = () => {
             </Form.Item>
           </Form.Item>
           <Button htmlType="submit"  className="button2" onClick={() => {}}>
-            Login
+           <a href="/singleproduct">Login</a>
           </Button>
           Or <a href="/SignUp">register now!</a>
         </Form>

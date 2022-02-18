@@ -12,7 +12,8 @@ import Dashbord from "../components/DashboardForAdmin";
 import AllProduct from "../views/dashboard/allProducts";
 import AllOrder from "../views/dashboard/orders";
 import Submit from "../components/order";
-import Overview from "../views/dashboard/Overview"
+import Overview from "../views/dashboard/Overview";
+import  SingleProduct from "../components/singleproduct"
 const isUserLogedIn = localStorage.getItem("userLogedIn");
 
 const Index = () => {
@@ -31,6 +32,7 @@ const Index = () => {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/order" element={<Submit />} />
         <Route path="/dash/admin" element={<Dashbord />}/>
+        <Route path="/singleproduct" element={< SingleProduct />}/>
    
       </Routes>
 
