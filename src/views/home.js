@@ -22,7 +22,7 @@ const Home = () => {
         {/* </div> */}
       </div>
 
-      <h1 style={{ color: "rgb(138, 74, 10)" }}>BUY OUR CURRENT PRODUCT</h1>
+      <h1 style={{ color: "rgb(138, 74, 10)" }}>OUR CURRENT PRODUCTS </h1>
 
       <Carousel
         variant="dark"
@@ -33,15 +33,15 @@ const Home = () => {
             <img
               className="d-block w-50 images-slide"
               src={prod.image[0]}
-              alt="Third slide"
+              // alt="Third slide"
             />
 
             <Carousel.Caption className="caption-images">
               <div className="d-block w-100  productCoverDiv">
                 <h5>{prod.title}</h5>
-                <p>
+                {/* <p>
                   {prod.description}
-                </p>
+                </p> */}
               </div>
             </Carousel.Caption>
           </Carousel.Item>
