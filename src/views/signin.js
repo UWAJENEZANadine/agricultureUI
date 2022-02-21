@@ -18,7 +18,7 @@ const Signin = () => {
     agricultureProductApis.signinAccount(values).then((res)=>{
       if(!res){
         return notification.error({
-          message:"Server is down",
+          message:"You need to have account before login",
         });
       }
       if(res.status===200){
@@ -31,7 +31,7 @@ const Signin = () => {
 
     localStorage.setItem("userLogedIn", true);
 
-    navigate("/dash");
+    navigate("/dash/Overview");
         }
       }
     }
@@ -51,6 +51,7 @@ const Signin = () => {
         width="50%"
         onOk={() => setVisible(true)}
         onCancel={() => setVisible(false)}
+        closable="true"
       >
       <div className="signin-container">
         <h1>Log in here please!</h1>

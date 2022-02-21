@@ -3,11 +3,29 @@ import { Space, Table, Skeleton ,notification} from "antd";
 import { EyeOutlined } from "@ant-design/icons";
 import { DeleteOutlined } from "@ant-design/icons";
 import { EditOutlined } from "@ant-design/icons";
+import "./allProducts.css"
 // import allAvailableProducts from "../../assets/constants/product.json"
 import agricultureProductApis from "../../services/agricultureProductApis";
-import { Spin} from 'antd';
+import { Spin, Drawer, Button, Card} from 'antd';
 
 import { Popconfirm, message } from "antd";
+
+
+const AllProduct = () => {
+  const [isDrawerVisible, setIsDrawerVisible]= useState(false);
+  
+  
+  const [user, setUser] =useState({});
+
+
+  const [getAllProducts, setGetAllProducts] = useState([]);
+
+  useEffect(() => {
+    agricultureProductApis.getAllProducts().then((res) => {
+      console.log(res);
+      setGetAllProducts(res.data.data);
+    });
+  }, []);
 
 function confirm(e) {
   console.log(e);
@@ -19,6 +37,7 @@ function confirm(e) {
       
   message.success("product deleted");
   window.location.reload()
+
     } else {
       return notification.error({
         message: !res.data.error ? res.data.message : res.data.error,
@@ -26,7 +45,6 @@ function confirm(e) {
     }
   });
 }
-
 
 function cancel(e) {
   console.log(e);
@@ -36,8 +54,8 @@ function cancel(e) {
 const columns = [
   {
     title: "PRODUCT NAME",
-    dataIndex: "title",
-    key: "title",
+    dataIndex: "ProductName",
+    key: "ProductName",
   },
   {
     title: "AVAILABLE QUANTITY",
@@ -70,12 +88,17 @@ const columns = [
     key: " actions",
     fixed: "right",
     width: 100,
-    render: (record) => (
+    render: (text, record) => (
       <Space size="middle">
-        <a>
-          {" "}
+        <a href=""  style={{color:"green"}} onClick={() => {
+          setUser(record);
+          setIsDrawerVisible(true)
+        } }>
+      
           <EyeOutlined />{" "}
         </a>
+        
+
         <a href="">
           <Popconfirm
             title="Are you sure to delete this product?"
@@ -89,23 +112,13 @@ const columns = [
 
         </a>
 
-        <a href="">
-          <EditOutlined />{" "}
-        </a>
+        <a href="" ><EditOutlined  /></a>
+          
+      
       </Space>
     ),
   },
 ];
-
-const AllProduct = () => {
-  const [getAllProducts, setGetAllProducts] = useState([]);
-
-  useEffect(() => {
-    agricultureProductApis.getAllProducts().then((res) => {
-      console.log(res);
-      setGetAllProducts(res.data.data);
-    });
-  }, []);
 
   return (
     <>
@@ -124,7 +137,31 @@ const AllProduct = () => {
           columns={columns}
           dataSource={getAllProducts}
         />
+       
       )}
+
+      <Drawer className="drawer-container"
+        placement ="top"
+        onClose={()=>setIsDrawerVisible(false)}
+        visible= {isDrawerVisible}
+        height="top"
+        >
+      
+
+      <Card  className="bg-info ">
+        <Space>
+        <h2  className="head-sty">Title:{user?.ProductName}</h2> </Space>
+        {/* <p>{user?.image}</p> */}
+        <Space className="col1"><h4 >Description</h4>{user?.description} </Space><br/>
+        <Space className="col1"><h4>Avaiable Quantity:</h4>{user?.available_quantity} </Space> <br/>
+        <Space className="col1"><h4>Posted date:</h4>{user?.posted_date} </Space><br/>
+        <Space className="col1"><h4>Expired date:</h4>{user?.expired_date}</Space> <br/>
+        <Space className="col1"><h4>Price:</h4>{user?.price}</Space><br/>
+       
+      </Card>
+
+           
+      </Drawer>
     </>
   );
 };

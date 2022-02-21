@@ -94,20 +94,6 @@ const DashLayout = ({ children }) => {
             }
           )}
 
-          <div className="navbar1">
-            <div className="title">
-              <h2>Dashboard</h2>
-              <span>Detailed information about your store</span>
-            </div>
-
-            <div className="container">
-              <Input
-                prefix={<SearchOutlined style={{color:"white"}}  />}
-                placeholder="search here...."
-             style={{width:"40%", marginLeft:"150px", backgroundColor:"black", borderRadius:"30px" }} />
-             <BellOutlined style={{fontSize:"2em", marginLeft:"10px", color:"white"}}/>
-            </div>
-          </div>
 
         </Header>
         <Content

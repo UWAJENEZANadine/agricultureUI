@@ -1,6 +1,6 @@
 .signUp-page{
   background-image: url(https://cdn.pixabay.com/photo/2021/09/17/12/12/coffee-6632524_960_720.jpg);
-  height: 115vh;
+  height: 135vh;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -8,7 +8,7 @@
 .signUp-container{
   
   background-color:whitesmoke ;
-  height:100vh;
+  height:130vh;
   width: 45%;
   margin-left: 25%;
   padding: 100px 50px;

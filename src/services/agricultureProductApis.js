@@ -4,8 +4,8 @@ import store from "store"
 
 
 
-//const AGRICULTURE_APIS_URL = "http://localhost:5050";
-const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
+const AGRICULTURE_APIS_URL = "http://localhost:5050";
+// const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
 
 var config = {
   headers: {
@@ -13,7 +13,6 @@ var config = {
     "x-auth-token": `${store.get("x-auth-token")}`,
   },
 };
-
 class Application {
 
 
@@ -45,7 +44,7 @@ class Application {
   async getAllUsers() {
     try {
       const response = await axios.get(
-        AGRICULTURE_APIS_URL + "/order/all/product/:id",
+        AGRICULTURE_APIS_URL + "/user/all",
         config
       );
 
@@ -59,6 +58,7 @@ class Application {
   async getAllProducts() {
     try {
       const response = await axios.get(
+        
         AGRICULTURE_APIS_URL + "/products/all",
         config
       );
@@ -85,9 +85,23 @@ class Application {
 
 
   }
+
+
+  async postProduct(data) {
+    try {
+      const response = await axios.post(
+        AGRICULTURE_APIS_URL + "/products/create",
+        data,
+        config
+      );
+      store.set("x-auth-token",response.cookies.token)
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
  
 }
-
 
 export default new Application();
 
