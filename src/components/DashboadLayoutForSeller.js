@@ -95,6 +95,7 @@ const DashLayout = ({ children }) => {
           )}
           <h1 style={{color: "white"}}>Dashboard</h1>
 
+
         </Header>
         <Content
           className="site-layout-background"

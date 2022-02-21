@@ -22,7 +22,12 @@ const column = [
     dataIndex: "email",
     key: "email",
   },
-  
+
+  {
+    title: "Adress",
+    dataIndex: "address",
+    key: " address",
+  },
 
   {
         title: "status",
@@ -32,9 +37,9 @@ const column = [
 
         render:(text,record)=>(
             <Space size="middle">
-                <a href="#">accepted </a>
-                <a href="#" style={{color:"green"}}>declined </a>
-                <a href="#" style={{color:"red"}}>canceled </a>
+                <a href="#">accept </a>
+                <a href="#" style={{color:"green"}}>decline </a>
+                <a href="#" style={{color:"red"}}>cancel </a>
 
             </Space>
         )

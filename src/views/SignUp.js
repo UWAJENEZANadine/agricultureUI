@@ -160,30 +160,3 @@ const SignUp = () => {
 
 export default SignUp;
 
-// firstName: String,
-// lastName: String,
-// phone: String,
-// email: {
-//   type: String,
-//   required: true,
-//   unique: true,
-// },
-// password: {
-//   type: String,
-//   required: true,
-// },
-// address: {
-//   type: String,
-//   default: "Rwanda",
-// },
-// gender: {
-//   type: String,
-//   enum: ["male", "female", "other", "not-say"],
-// },
-
-// role: {
-//   type: String,
-//   default: "buyer",
-//   enum: ["admin", "buyer", "seller"],
-// },
-// },
