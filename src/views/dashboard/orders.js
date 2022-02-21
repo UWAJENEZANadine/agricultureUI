@@ -22,24 +22,7 @@ const column = [
     dataIndex: "email",
     key: "email",
   },
-  {
-    title: "Product Name",
-    dataIndex: "ProductName",
-    key: "ProductName",
-  },
- 
-
-
-  {
-    title: "Product Name",
-    dataIndex: "ProductName",
-    key: "ProductName",
-  },
-
-
- 
-
-
+  
 
   {
         title: "status",

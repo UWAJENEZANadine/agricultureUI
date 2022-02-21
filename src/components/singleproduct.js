@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./singleproduct.css";
-import HomeLayout from "../components/homeLayout";
 import ReactDOM from 'react-dom';
 import agricultureProductApis from "../../src/services/agricultureProductApis";
+import HomeLayout from "../components/homeLayout";
 import {
  
   notification
@@ -28,7 +28,8 @@ const SingleProduct = ()=> {
     });
   };
   return (
-   
+    <HomeLayout>
+   <div className="container1">
       <div className="form">
     <form>
       <div className="form-container">
@@ -43,6 +44,8 @@ const SingleProduct = ()=> {
       </div>
     </form>
     </div>
+    </div>
+    </HomeLayout>
    
   )
 
