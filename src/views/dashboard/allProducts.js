@@ -6,14 +6,21 @@ import { EditOutlined } from "@ant-design/icons";
 import "./allProducts.css"
 // import allAvailableProducts from "../../assets/constants/product.json"
 import agricultureProductApis from "../../services/agricultureProductApis";
-import { Spin, Drawer, Button, Card} from 'antd';
-
+import { Spin, Drawer, Button, Card, Modal} from 'antd';
+import { UploadOutlined } from "@ant-design/icons";
+import {
+  Form,
+  Input,
+  Select,
+  DatePicker,
+  Upload,
+} from "antd";
 import { Popconfirm, message } from "antd";
 
 
 const AllProduct = () => {
   const [isDrawerVisible, setIsDrawerVisible]= useState(false);
-  
+   const [visible, setVisible] = useState(false);
   
   const [user, setUser] =useState({});
 
@@ -44,7 +51,32 @@ function confirm(e) {
       });
     }
   });
+};
+
+const onFinish = (values) => {
+function confirm(e) {
+  console.log(e);
+  agricultureProductApis.updateProduct(e._id).then((res)=>{
+    if (!res) {
+      return notification.error({ message: "server is down" });
+    }
+    if (res.status === 200) {
+      
+  message.success("product updated");
+  window.location.reload()
+
+    } else {
+      return notification.error({
+        message: !res.data.error ? res.data.message : res.data.error,
+      });
+    }
+  });
 }
+}
+
+
+
+
 
 function cancel(e) {
   console.log(e);
@@ -112,7 +144,11 @@ const columns = [
 
         </a>
 
-        <a href="" ><EditOutlined  /></a>
+        <a href=""  onClick={() => {
+          setUser(record);
+          setVisible(true)
+          
+        } }><EditOutlined  /></a>
           
       
       </Space>
@@ -162,6 +198,153 @@ const columns = [
 
            
       </Drawer>
+
+
+       <Modal
+        visible={visible}
+        width="50%"
+        onOk={() => setVisible(true)}
+        onCancel={() => setVisible(false)}
+        closable="true"
+      >
+
+<Form
+      name="normal_register"
+      className="register-form-product"
+      initialValues={{ remember: true }}
+      onFinish={onFinish}
+    >
+      <h1 style={{ fontStyle: "oblique", fontFamily: "serif" }}>
+        Fill this form to update
+      </h1>
+      <Form.Item
+        name="ProductName"
+        rules={[
+          {
+            required: true,
+            message: "Please input ProductName!",
+          },
+        ]}
+      >
+        <label>Product Name:</label>
+        <br />
+        <Input placeholder="ProductName" />
+      </Form.Item>
+      <Form.Item
+        name="description"
+        rules={[
+          {
+            required: true,
+            message: "Please input description!",
+          },
+        ]}
+      >
+        <label>Description:</label>
+        <br />
+        <Input placeholder="description" />
+      </Form.Item>
+      <Form.Item
+        name="available_quantity"
+        rules={[
+          {
+            required: true,
+            message: "Please  valid available_quantity!",
+          },
+        ]}
+      >
+        <label>Available Quantity:</label>
+        <br />
+        <Input placeholder="available_quantity" />
+      </Form.Item>
+
+      <Form.Item name="image">
+        <label>Image:</label>
+        <br />
+        <Upload
+          name="logo"
+          action="/upload.do"
+          listType="picture"
+          status="uploading"
+        >
+          <Button
+            style={{ width: "650px", borderRadius: "10px"}}
+            
+            icon={<UploadOutlined  />}
+          >
+            Click to upload
+          </Button>
+        </Upload>
+      </Form.Item>
+
+      <Form.Item
+        name="posted_date"
+        rules={[
+          {
+            required: true,
+            message: "Please input your posted_date",
+          },
+        ]}
+      >
+        <label>Posted date:</label>
+        <br />
+        <DatePicker style={{ width: "650px", borderRadius: "10px" }} />
+      </Form.Item>
+      <Form.Item
+        name="expired_date"
+        rules={[
+          {
+            required: true,
+            message: "Please input your expired_date",
+          },
+        ]}
+      >
+        <label>Expired date:</label>
+        <br />
+        <DatePicker style={{ width: "650px", borderRadius: "10px" }} />
+      </Form.Item>
+
+      <Form.Item
+        name=" price"
+        rules={[
+          {
+            required: true,
+            message: "Please input your  price",
+          },
+        ]}
+      >
+        <label>Price</label>
+        <br />
+        <Input placeholder="price" />
+      </Form.Item>
+      <Form.Item
+        name="seller_phone"
+        rules={[
+          {
+            required: true,
+            message: "Please input your seller_phone",
+          },
+        ]}
+      >
+        <label>seller Phone</label>
+        <br />
+        <Input placeholder="seller_phone" />
+      </Form.Item>
+
+      <Button
+        style={{ marginTop: "2%" }}
+        className="register-form-button"
+        htmlType="submit"
+        onClick={() => {}}
+      >
+        post Product
+      </Button>
+    </Form>
+
+
+
+      </Modal>
+
+
     </>
   );
 };

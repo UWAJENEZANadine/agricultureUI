@@ -28,6 +28,7 @@ const DashLayout = ({ children }) => {
   return (
     <Layout>
       <Sider
+      className="s-container"
         trigger={null}
         collapsible
         collapsed={collapsed}

@@ -99,6 +99,22 @@ class Application {
 
   }
 
+   async updateProduct(id){
+  
+    try{
+      const response = await axios.patch(
+        AGRICULTURE_APIS_URL + "/products/"+id,
+        config
+      );
+      
+      return response;
+    }catch(error){
+      console.log(error)
+    }
+
+
+  }
+
 
   async postProduct(data) {
     try {
