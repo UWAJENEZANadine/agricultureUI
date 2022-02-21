@@ -4,8 +4,8 @@ import store from "store"
 
 
 
-const AGRICULTURE_APIS_URL = "http://localhost:5050";
-// const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
+// const AGRICULTURE_APIS_URL = "http://localhost:5050";
+const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
 
 var config = {
   headers: {
@@ -87,6 +87,22 @@ class Application {
   
     try{
       const response = await axios.delete(
+        AGRICULTURE_APIS_URL + "/products/"+id,
+        config
+      );
+      
+      return response;
+    }catch(error){
+      console.log(error)
+    }
+
+
+  }
+
+   async updateProduct(id){
+  
+    try{
+      const response = await axios.patch(
         AGRICULTURE_APIS_URL + "/products/"+id,
         config
       );
