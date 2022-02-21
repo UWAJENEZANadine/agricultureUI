@@ -23,6 +23,7 @@ const SignUp = () => {
       if (res.status === 200) {
         return notification.success({
           message: "your account has been created",
+          
         });
       } else {
         return notification.error({
@@ -147,8 +148,9 @@ const SignUp = () => {
               </Select>
             </Form.Item>
 
-            <Button className="register-form-button" htmlType="submit" onClick={() => {}}>
+            <Button className="register-form-button" htmlType="submit" onClick={() => {}} >
               createAccount
+              
             </Button>
           </Form>
           </div>

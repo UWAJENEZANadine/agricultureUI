@@ -40,7 +40,7 @@ const NewProductPost = () => {
       onFinish={onFinish}
     >
       <h1 style={{ fontStyle: "oblique", fontFamily: "serif" }}>
-        You can edit your posted product
+        
       </h1>
       <Form.Item
         name="ProductName"
