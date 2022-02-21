@@ -148,7 +148,7 @@ const SignUp = () => {
               </Select>
             </Form.Item>
 
-            <Button className="register-form-button" htmlType="submit" onClick={() => {}} >
+            <Button className="register-form-button" htmlType="submit"  onClick={() => localStorage.removeItem("userLogedIn")} >
               createAccount
               
             </Button>
