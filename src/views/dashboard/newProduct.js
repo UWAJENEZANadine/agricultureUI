@@ -40,7 +40,8 @@ const NewProductPost = () => {
       onFinish={onFinish}
     >
       <h1 style={{ fontStyle: "oblique", fontFamily: "serif" }}>
-        You can edit your posted product
+        please fill this form to post your product
+        
       </h1>
       <Form.Item
         name="ProductName"
@@ -158,7 +159,7 @@ const NewProductPost = () => {
         htmlType="submit"
         onClick={() => {}}
       >
-        edit
+        post product
       </Button>
     </Form>
   );

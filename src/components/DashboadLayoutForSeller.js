@@ -45,22 +45,22 @@ const DashLayout = ({ children }) => {
           }}
         />
         <Menu  style={{backgroundColor:"rgb(75, 39, 3)", color:"white" }} mode="inline" defaultSelectedKeys={["1"]}>
-          <Menu.Item key="1" icon={<StarOutlined />}>
+          <Menu.Item key="1" icon={<StarOutlined />}  style={{backgroundColor:"rgb(75, 39, 0.77)"}}>
             <Link style={{ textDecoration: "none",  color:"white" }} to="/dash/Overview">
               Overview
             </Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<UserOutlined />}>
+          <Menu.Item key="2" icon={<UserOutlined />} style={{backgroundColor:"rgb(75, 39, 0.77)"}}>
             <Link style={{ textDecoration: "none", color:"white" }} to="/dash/newProduct">
               create a product
             </Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<StarOutlined />}>
+          <Menu.Item key="3" icon={<StarOutlined />} style={{backgroundColor:"rgb(75, 39, 0.77)"}} >
             <Link style={{ textDecoration: "none", color:"white" }} to="/dash/allProducts">
               Manage your allProducts
             </Link>
           </Menu.Item>
-          <Menu.Item key="4" icon={<ShoppingCartOutlined />}>
+          <Menu.Item key="4" icon={<ShoppingCartOutlined />} style={{backgroundColor:"rgb(75, 39, 0.77)"}} >
             <Link style={{ textDecoration: "none" , color:"white"}} to="/dash/allorder">
               {" "}
               Orders
@@ -69,7 +69,7 @@ const DashLayout = ({ children }) => {
           <Menu.Item
             key="5"
             icon={<UploadOutlined />}
-            onClick={() => localStorage.removeItem("userLogedIn")}
+            onClick={() => localStorage.removeItem("userLogedIn")} style={{backgroundColor:"rgb(75, 39, 0.77)"}} 
           >
             <Link style={{ textDecoration: "none", color:"white" }} to="/home">
               Logout

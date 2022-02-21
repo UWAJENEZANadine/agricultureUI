@@ -15,7 +15,6 @@ const HomeLayout = ({children}) =>{
             </div>
             <Footer></Footer>
 
-
         </div>
         </>
 
