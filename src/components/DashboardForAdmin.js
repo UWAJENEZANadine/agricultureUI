@@ -5,6 +5,7 @@ import { Layout, Menu, Table} from 'antd';
 import agricultureProductApis from "../../src/services/agricultureProductApis";
 import { BarChart,Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 
 const { SubMenu } = Menu;
@@ -84,7 +85,7 @@ const Dashbord = () => {
       <div className="topbar">
         <div className="topbar1">
           <div className="dashLeft">
-            <span className="title">admin</span>
+            <span className="title">AdminDashboard</span>
           </div>
           <div className="dashright">
             <div className="TopbariconsContainer">
@@ -95,11 +96,10 @@ const Dashbord = () => {
               <Language />
               <span className="iconsContainer">2</span>
             </div>
-            <div className="TopbariconsContainer">
-              <Settings />
-
-            </div>
-            <img src="https://media.istockphoto.com/photos/hes-a-diligent-worker-picture-id1136807674?b=1&k=20&m=1136807674&s=170667a&w=0&h=YAk_zO5dzggxaFDAqjCXeRfdjdlDJvkWeRz2NPmFpHU=" className="topAvator" />
+           
+            <Link style={{ textDecoration: "none" }} to="/home">
+              Logout
+            </Link>
           </div>
 
         </div>
@@ -122,11 +122,11 @@ const Dashbord = () => {
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="Seller" fill="black" />
-                <Bar dataKey="Buyer" fill="#82ca9d" />
+                <Bar dataKey="Buyer" fill="rgba(141, 66, 16, 0.849)" />
               </BarChart>
             </div>
             <div className="members">
-  <h1>New Join Members</h1>
+  <h1>New Members</h1>
   
   <Table className="bg-dark" columns={column} dataSource={allUsersData} />
 </div>

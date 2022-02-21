@@ -30,11 +30,20 @@ const Signin = () => {
         else if(res.data.data.role==="seller"){
 
     localStorage.setItem("userLogedIn", true);
+    navigate("/dash");
+        } 
+        
+        if(res.data.data.role==="buyer"){
 
-    navigate("/dash/Overview");
-        }
+          localStorage.setItem("userLogedIn", true);
+      
+          navigate("/singleproduct");
+              }  
       }
+
+      
     }
+
     )
 
   };
@@ -91,7 +100,7 @@ const Signin = () => {
             </Form.Item>
           </Form.Item>
           <Button htmlType="submit"  className="button2" onClick={() => {}}>
-            Login
+           Login
           </Button>
           Or <a href="/SignUp">register now!</a>
         </Form>

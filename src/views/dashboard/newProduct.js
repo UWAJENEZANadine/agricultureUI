@@ -35,7 +35,7 @@ const NewProductPost = () => {
   return (
     <Form
       name="normal_register"
-      className="register-form"
+      className="register-form-product"
       initialValues={{ remember: true }}
       onFinish={onFinish}
     >
@@ -92,8 +92,7 @@ const NewProductPost = () => {
           status="uploading"
         >
           <Button
-            style={{ width: "650px", borderRadius: "10px", height:"
-            " }}
+            style={{ width: "650px", borderRadius: "10px"}}
             
             icon={<UploadOutlined  />}
           >

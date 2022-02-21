@@ -22,16 +22,12 @@ const column = [
     dataIndex: "email",
     key: "email",
   },
- 
- 
-
 
   {
     title: "Adress",
     dataIndex: "address",
     key: " address",
   },
-
 
   {
         title: "status",

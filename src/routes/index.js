@@ -5,6 +5,7 @@ import ProductView from "../views/product";
 import AboutUs from "../views/aboutUs";
 import Signin from "../views/signin";
 import SignUp from "../views/SignUp";
+import Blog from "../views/blogs"
 
 import NewProductPost from "../views/dashboard/newProduct";
 import DashLayout from "../components/DashboadLayoutForSeller";
@@ -12,7 +13,9 @@ import Dashbord from "../components/DashboardForAdmin";
 import AllProduct from "../views/dashboard/allProducts";
 import AllOrder from "../views/dashboard/orders";
 import Submit from "../components/order";
-import Overview from "../views/dashboard/Overview"
+import Overview from "../views/dashboard/Overview";
+import  SingleProduct from "../components/singleproduct"
+
 const isUserLogedIn = localStorage.getItem("userLogedIn");
 
 const Index = () => {
@@ -29,8 +32,10 @@ const Index = () => {
         <Route path="/signin" element={<Signin />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path ="/blogs" element={<Blog />} />
         <Route path="/order" element={<Submit />} />
         <Route path="/dash/admin" element={<Dashbord />}/>
+        <Route path="/singleproduct" element={< SingleProduct />}/>
    
       </Routes>
 
