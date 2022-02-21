@@ -12,10 +12,11 @@
 }
 .title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
     color: rgb(138, 74, 10);
     cursor: pointer;
-    margin-left: 900%;
+    text-align: center;
+    margin-left: 80%;
 }
 .TopbariconsContainer{
     position: relative;

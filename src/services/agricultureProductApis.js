@@ -58,7 +58,7 @@ class Application {
   async getAllUsers() {
     try {
       const response = await axios.get(
-        AGRICULTURE_APIS_URL + "/order/all/product/:id",
+        AGRICULTURE_APIS_URL + "/user/all",
         config
       );
 

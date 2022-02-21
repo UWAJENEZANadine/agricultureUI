@@ -36,8 +36,8 @@ function cancel(e) {
 const columns = [
   {
     title: "PRODUCT NAME",
-    dataIndex: "title",
-    key: "title",
+    dataIndex: "ProductName",
+    key: "ProductName",
   },
   {
     title: "AVAILABLE QUANTITY",

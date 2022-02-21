@@ -85,7 +85,7 @@ const Dashbord = () => {
       <div className="topbar">
         <div className="topbar1">
           <div className="dashLeft">
-            <span className="title">admin</span>
+            <span className="title">AdminDashboard</span>
           </div>
           <div className="dashright">
             <div className="TopbariconsContainer">
@@ -122,11 +122,11 @@ const Dashbord = () => {
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="Seller" fill="black" />
-                <Bar dataKey="Buyer" fill="#82ca9d" />
+                <Bar dataKey="Buyer" fill="rgba(141, 66, 16, 0.849)" />
               </BarChart>
             </div>
             <div className="members">
-  <h1>New Join Members</h1>
+  <h1>New Members</h1>
   
   <Table className="bg-dark" columns={column} dataSource={allUsersData} />
 </div>
