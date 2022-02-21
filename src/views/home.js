@@ -22,7 +22,7 @@ const Home = () => {
         {/* </div> */}
       </div>
 
-      <h1 style={{ color: "rgb(138, 74, 10)" }}>OUR CURRENT PRODUCTS </h1>
+      <h1 style={{ color: "rgb(138, 74, 10)" }}>OUR CURRENT FARMERS </h1>
 
       <Carousel
         variant="dark"

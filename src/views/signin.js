@@ -25,17 +25,20 @@ const Signin = () => {
         console.log(res.data.data);
         if(res.data.data.role==="admin"){
           localStorage.setItem("userLogedIn", true);
+          localStorage.setItem("x-auth-token", res.data.token);
           navigate("/dash/admin");
         }
         else if(res.data.data.role==="seller"){
 
     localStorage.setItem("userLogedIn", true);
+    localStorage.setItem("x-auth-token", res.data.token);
     navigate("/dash");
         } 
         
         if(res.data.data.role==="buyer"){
 
           localStorage.setItem("userLogedIn", true);
+          localStorage.setItem("x-auth-token", res.data.token);
       
           navigate("/singleproduct");
               }  

@@ -151,7 +151,7 @@ const columns = [
       <Card  className="bg-info ">
         <Space>
         <h2  className="head-sty">Title:{user?.ProductName}</h2> </Space>
-        {/* <p>{user?.image}</p> */}
+        <img src= {user?.image} />
         <Space className="col1"><h4 >Description</h4>{user?.description} </Space><br/>
         <Space className="col1"><h4>Avaiable Quantity:</h4>{user?.available_quantity} </Space> <br/>
         <Space className="col1"><h4>Posted date:</h4>{user?.posted_date} </Space><br/>

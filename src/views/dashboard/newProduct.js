@@ -46,7 +46,7 @@ const NewProductPost = () => {
         name="ProductName"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please input ProductName!",
           },
         ]}
@@ -59,7 +59,7 @@ const NewProductPost = () => {
         name="description"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please input description!",
           },
         ]}
@@ -72,7 +72,7 @@ const NewProductPost = () => {
         name="available_quantity"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please  valid available_quantity!",
           },
         ]}
@@ -105,7 +105,7 @@ const NewProductPost = () => {
         name="posted_date"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please input your posted_date",
           },
         ]}
@@ -118,7 +118,7 @@ const NewProductPost = () => {
         name="expired_date"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please input your expired_date",
           },
         ]}
@@ -132,7 +132,7 @@ const NewProductPost = () => {
         name=" price"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please input your  price",
           },
         ]}
@@ -145,7 +145,7 @@ const NewProductPost = () => {
         name="seller_phone"
         rules={[
           {
-            required: true,
+            // required: true,
             message: "Please input your seller_phone",
           },
         ]}

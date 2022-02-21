@@ -4,8 +4,8 @@ import store from "store"
 
 
 
-const AGRICULTURE_APIS_URL = "http://localhost:5050";
-// const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
+// const AGRICULTURE_APIS_URL = "http://localhost:5050";
+const AGRICULTURE_APIS_URL = "https://projectagriculture-api.herokuapp.com";
 
 var config = {
   headers: {
@@ -107,7 +107,7 @@ class Application {
         data,
         config
       );
-      store.set("x-auth-token",response.cookies.token)
+      store.set("x-auth-token",response.data.token)
       return response;
     } catch (error) {
       console.log(error);
