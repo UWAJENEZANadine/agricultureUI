@@ -57,7 +57,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   color: white;
   /* justify-content: space-between; */
   /* display: flex; */
@@ -96,7 +96,7 @@
   font-family: sans-serif;
   text-align: center;
   margin-top: -200px;
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 60px;
   padding: 30px;
   margin-left: 0px;

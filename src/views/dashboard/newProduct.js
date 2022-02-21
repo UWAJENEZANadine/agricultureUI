@@ -44,6 +44,7 @@ const NewProductPost = () => {
       </h1>
       <Form.Item
         name="ProductName"
+        label="Product Name:"
         rules={[
           {
             // required: true,
@@ -51,12 +52,11 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>Product Name:</label>
-        <br />
         <Input placeholder="ProductName" />
       </Form.Item>
       <Form.Item
         name="description"
+        label="Description"
         rules={[
           {
             // required: true,
@@ -64,12 +64,11 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>Description:</label>
-        <br />
         <Input placeholder="description" />
       </Form.Item>
       <Form.Item
         name="available_quantity"
+        label="available quantity"
         rules={[
           {
             // required: true,
@@ -77,14 +76,12 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>Available Quantity:</label>
-        <br />
+      
         <Input placeholder="available_quantity" />
       </Form.Item>
 
-      <Form.Item name="image">
-        <label>Image:</label>
-        <br />
+      <Form.Item name="image" label="Image:">
+       
         <Upload
           name="logo"
           action="/upload.do"
@@ -103,6 +100,7 @@ const NewProductPost = () => {
 
       <Form.Item
         name="posted_date"
+        label="Posted date:"
         rules={[
           {
             // required: true,
@@ -110,12 +108,12 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>Posted date:</label>
-        <br />
-        <DatePicker style={{ width: "650px", borderRadius: "10px" }} />
+      
+      <Input placeholder="posted_date" />
       </Form.Item>
       <Form.Item
         name="expired_date"
+        label="Expired date:"
         rules={[
           {
             // required: true,
@@ -123,13 +121,13 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>Expired date:</label>
-        <br />
-        <DatePicker style={{ width: "650px", borderRadius: "10px" }} />
+        
+        <Input placeholder="expired_date" />
       </Form.Item>
 
       <Form.Item
-        name=" price"
+        name="price"
+        label="Price"
         rules={[
           {
             // required: true,
@@ -137,12 +135,12 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>Price</label>
-        <br />
+        
         <Input placeholder="price" />
       </Form.Item>
       <Form.Item
         name="seller_phone"
+        label="seller Phone"
         rules={[
           {
             // required: true,
@@ -150,8 +148,7 @@ const NewProductPost = () => {
           },
         ]}
       >
-        <label>seller Phone</label>
-        <br />
+
         <Input placeholder="seller_phone" />
       </Form.Item>
 
