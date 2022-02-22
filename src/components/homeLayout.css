@@ -65,7 +65,7 @@
 
   /* align-items: center; */
   margin-bottom: 20px;
-  padding: 80px;
+  padding: 100px;
 }
 .quote-div-container h1{
   color: whitesmoke;
@@ -92,13 +92,13 @@
   margin-top: 30px;
 }
 .caption-images h5 {
-  color:black;
+  color:whitesmoke;
   font-family: sans-serif;
   text-align: center;
-  margin-top: -200px;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 60px;
-  padding: 30px;
+  background-color: black;
+  padding: 10px;
   margin-left: 0px;
 }
 .caption-images p {
@@ -120,11 +120,11 @@
   margin-top: 10px;
   font-size: larger;
   border-radius: 15px;
-  margin-left: 45%;
+  margin-left: 42%;
   padding: 20px;
 }
 .button1:hover {
-  background-color: rgba(105, 104, 104, 0.808);
+  background-color: rgba(146, 140, 140, 0.808);
  
 }
 .button1 a {

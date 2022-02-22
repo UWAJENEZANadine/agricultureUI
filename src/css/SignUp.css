@@ -1,7 +1,7 @@
 .signUp-page{
 
   background-image: url("https://coffeezoid.com/imgs/uploads/best-robusta-coffee.jpg");
-  height: 140vh;
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -9,7 +9,7 @@
 .signUp-container{
   
   background-color: whitesmoke ;
-  height:130vh;
+  height:110vh;
   width: 45%;
   margin-left: 25%;
   padding: 100px 50px;

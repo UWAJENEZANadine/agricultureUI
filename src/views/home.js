@@ -37,7 +37,7 @@ const Home = () => {
             />
 
             <Carousel.Caption className="caption-images">
-              <div className="d-block w-100  productCoverDiv">
+              <div className="d-block w-50   productCoverDiv">
                 <h5>{prod.title}</h5>
                 {/* <p>
                   {prod.description}
