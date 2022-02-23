@@ -46,7 +46,7 @@ h1 {
 }
 .register-form-button:hover{
   background-color: rgba(32, 28, 28, 0.089);
-  color: rgb(138, 74, 10);
+  color: black;
   border: rgba(255, 255, 255, 0.753);
 }
 
