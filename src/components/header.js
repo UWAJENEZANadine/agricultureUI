@@ -5,17 +5,17 @@ import "./header.css";
 const Header = () => {
   return (
     <>
-      <div className="logo-container">
-        <div className="home1-container">
-          <div>
+      <div className="home1-container d-block">
+          <div class="top d-flex justify-content-between align-items-center">
+          <div className="logo">
             <img src={logo} />
           </div>
-
+          <h1>IGIRE MUHINZI</h1>
+          </div>
           {/* <div id="google_translate_element"></div> */}
 
-          <div className="nav-nav">
-            <h1 style={{ height: "120px" }}>IGIRE MUHINZI</h1>
-            <div className="nav-container">
+            
+            <div className="nav-container d-flex justify-content-around">
               <a href="home">Home</a>
               <a href="SignUp">SignUp</a>
               <a href="SignIn">SignIn</a>
@@ -23,11 +23,8 @@ const Header = () => {
               <a href="product">Products</a>
               
             </div>
-            
-          </div>
-          <hr></hr>
+          
         </div>
-      </div>
     </>
   );
 };

@@ -8,6 +8,7 @@ import "./homeLayout.css"
 const HomeLayout = ({children}) =>{
     return(
         <>
+        <div class="wrapper">
         <Header></Header>
         <div className="home-container">
             <div style={{minheight:"280vh"}}>
@@ -16,8 +17,9 @@ const HomeLayout = ({children}) =>{
             <Footer></Footer>
 
         </div>
-        </>
-
+        
+        </div>
+         </>
         
 
     )
