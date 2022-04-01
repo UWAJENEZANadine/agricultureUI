@@ -9,6 +9,17 @@
     height: 100%;
 }
 
-@media (max-width: 450px) {
+@media (min-width:400px) and (max-width: 767px) {
+
+    .d-block{
+        width:100%;
+        margin:0 auto;
+        object-fit:cover;
+        /* height:80vh; */
+    }
+    .caption-images h5{
+        font-size: 20px;
+    }
+
     
 }
