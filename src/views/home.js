@@ -9,7 +9,7 @@ const Home = () => {
       <div className="quote-div-container">
         <h1>IGIRE MUHINZI</h1>
         <div className="quote-div">
-        <p> E-commerce platform for buying and selling of agriculture products, <br/>
+          <p> E-commerce platform for buying and selling of agriculture products, <br />
             we bridge the gap buy offering quality products at an affordable price.
             <br />
             <br />
@@ -27,18 +27,23 @@ const Home = () => {
       <Carousel
         variant="dark"
         className="slide Carousel-fade container-corousel"
+
       >
         {topThreeProduct.map((prod) => (
-          <Carousel.Item>
+          <Carousel.Item
+            
+          >
             <img
-              className="d-block w-50 images-slide"
+              className="d-block w-60 images-slide"
               src={prod.image[0]}
-              // alt="Third slide"
+              
+             
+            // alt="Third slide"
             />
 
             <Carousel.Caption className="caption-images">
               <div className="d-block w-50   productCoverDiv">
-                <h5>{prod.title}</h5>
+                <h5 className="nameofumuhinzi">{prod.title}</h5>
                 {/* <p>
                   {prod.description}
                 </p> */}

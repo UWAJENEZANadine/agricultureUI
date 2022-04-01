@@ -36,8 +36,8 @@ const SignUp = () => {
   return (
     <HomeLayout>
       <div className="signUp-page"style={{padding:"50px"}}> 
-        <div className="signUp-container" >
-          <h1>CREATE ACCOUNT</h1><br/><br/>
+        <div className="signUp-container" ><br/>
+          <h1>CREATE ACCOUNT</h1><br/>
           <Form
             name="normal_register"
             className="register-form"
