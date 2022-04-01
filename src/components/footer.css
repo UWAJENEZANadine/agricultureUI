@@ -59,7 +59,7 @@ ul li{
         display: block;
         justify-content: space-between;
         align-items: center;
-        height: 75vh;
+        height: 82vh;
         font-size: 10px;
         
     }
@@ -72,6 +72,12 @@ ul li{
         font-size: 15px;
         
     }
+    .copyright{
+        margin-left:40px;
+        text-decoration: none;
+        font-size: 30px;
+
+        }
 
 }
 

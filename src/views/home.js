@@ -34,7 +34,7 @@ const Home = () => {
             
           >
             <img
-              className="d-block w-60 images-slide"
+              className="d-block w-100 images-slide"
               src={prod.image[0]}
               
              
