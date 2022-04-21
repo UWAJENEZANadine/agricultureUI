@@ -36,9 +36,11 @@ const Home = () => {
             <img
               className="d-block w-100 images-slide"
               src={prod.image[0]}
+              alt="Third slide"
+
               
              
-            // alt="Third slide"
+            
             />
 
             <Carousel.Caption className="caption-images">
