@@ -6,9 +6,9 @@ import agricultureProductApis from "../../services/agricultureProductApis";
 
 const column = [
   {
-    title: "First Name",
-    dataIndex: "firstName",
-    key: "firstName",
+    title: "Full Ame",
+    dataIndex: "title",
+    key: "title",
   },
   {
     title: "Last Name",
