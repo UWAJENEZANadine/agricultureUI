@@ -48,6 +48,9 @@
   color: rgb(1, 1, 17); */
   /* margin-left: 40%; */
 /* } */
+.wrapper{
+  width: 100% !important;
+}
 .images-slide {
   height: 70vh;
   margin-left: 340px;
@@ -59,13 +62,10 @@
   width: 100%;
   height: 60vh;
   color: white;
-  /* justify-content: space-between; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-
-  /* align-items: center; */
+  text-align: center;
+  align-items: center;
   margin-bottom: 20px;
-  padding: 80px;
+  padding: 100px;
 }
 .quote-div-container h1{
   color: whitesmoke;
@@ -91,14 +91,15 @@
   margin-bottom: 20px;
   margin-top: 30px;
 }
+ 
 .caption-images h5 {
-  color:black;
+  color:whitesmoke;
   font-family: sans-serif;
   text-align: center;
-  margin-top: -200px;
-  font-weight: 800;
-  font-size: 60px;
-  padding: 30px;
+  font-weight: 600;
+  font-size: 5rem;
+  background-color: black;
+  padding: 10px;
   margin-left: 0px;
 }
 .caption-images p {
@@ -114,17 +115,17 @@
   width: 160px;
   height: 8vh;
   cursor: pointer;
-  text-align: center;
-  
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
   font-size: larger;
   border-radius: 15px;
-  margin-left: 45%;
-  padding: 20px;
+  margin-left: 42%;
+  /* padding: 20px; */
 }
 .button1:hover {
-  background-color: rgba(105, 104, 104, 0.808);
+  background-color: rgba(146, 140, 140, 0.808);
  
 }
 .button1 a {
@@ -134,4 +135,53 @@
 .button1 a:hover
 {
   color: rgb(138, 74, 10);
+}
+
+@media (max-width: 450px){
+  .quote-div-container {
+    width: 100%;
+    height: 53vh;
+    color: white;
+    align-items: center; 
+    margin-bottom: 20px;
+    padding: 80px 15px 0px 15px !important;
+  }
+
+  .button1 {
+    background-color: rgba(255, 255, 255, 0.753);
+    width: 160px;
+    height: 8vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: larger;
+    border-radius: 15px;
+    /* margin-left: 42%; */
+    /* padding: 20px; */
+    margin-right: 10px !important;
+  }
+  .quote-div{
+    width: 100%;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0px !important;
+    font-size: 15px;
+  }
+  .caption-images {
+    width:100%;
+    height:20vh;
+    font-size: 15px;
+    font-weight:0px ;
+  }
+  .d-block{
+    width:90%;
+    margin:0 auto;
+    object-fit:cover;
+    /* height:80vh; */
+}
+.caption-images h5{
+    font-size: 20px;
+}
 }

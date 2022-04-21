@@ -172,13 +172,13 @@ const AllProduct = () => {
         height="top"
         width="500"
       >
-        <Card className="bg-info ">
+        <Card className="bg-white ">
           <Space>
-            <h2 className="head-sty">Title:{user?.ProductName}</h2>{" "}
+            <h2 className="head-sty">{user?.ProductName}</h2>{" "}
           </Space> <br />
-          <img src={user?.image} style={{width:"230px", height:"40vh", marginLeft:"400px"}} />
+          <img src={user?.image} style={{width:"50%", height:"60vh", }} />
           <Space className="col1">
-            <h4>Description</h4>
+            <h4></h4>
             {user?.description}{" "}
           </Space>
           <br />

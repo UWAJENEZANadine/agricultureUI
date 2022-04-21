@@ -1,17 +1,14 @@
 .footer-container{
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 40px 40px 40px 40px;
     color: white;
     font-family: sans-serif;
     font-size: 10px;
-    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 99%, 48% 71%, 0 100%, 0 88%, 0% 35%, 0 0);
-    
-
-    
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 99%, 48% 71%, 0 100%, 0 88%, 0% 35%, 0 0);   
  
 }
 .footer-container h2{
@@ -54,7 +51,35 @@ ul li{
 .copyright:hover{
     color:rgb(138, 74, 10);
 }
+@media (max-width: 450px) {
+    .footer-container{
+        width: 100% !important;
+        /* margin: 0px !important; */
+        padding: 20px !important;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        height: 82vh;
+        font-size: 10px;
+        
+    }
+    .footer-container h2{
+        font-size: 20px;
+    }
+    .footer-container a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        
+    }
+    .copyright{
+        margin-left:40px;
+        text-decoration: none;
+        font-size: 30px;
 
+        }
+
+}
 
 
 
